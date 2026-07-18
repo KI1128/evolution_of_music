@@ -48,6 +48,11 @@ if menu == "Genres (ジャンル)":
         )
         
         if st.button("💾 Genres.csvを保存", type="primary"):
+            if 'year' in edited_df.columns:
+                edited_df['year'] = pd.to_numeric(edited_df['year'], errors='coerce').astype('Int64')
+            if 'end_year' in edited_df.columns:
+                edited_df['end_year'] = pd.to_numeric(edited_df['end_year'], errors='coerce').astype('Int64')
+                
             edited_df.to_csv(GENRES_CSV, index=False, encoding="utf-8-sig")
             st.success("ジャンルデータを保存しました！")
             st.cache_data.clear()
@@ -154,6 +159,9 @@ elif menu == "Milestones (マイルストーン)":
     )
     
     if st.button("💾 Milestones.csvを保存", type="primary"):
+        if 'year' in edited_df.columns:
+            edited_df['year'] = pd.to_numeric(edited_df['year'], errors='coerce').astype('Int64')
+            
         edited_df.to_csv(MILESTONES_CSV, index=False, encoding="utf-8-sig")
         st.success("マイルストーンデータを保存しました！")
         st.cache_data.clear()
