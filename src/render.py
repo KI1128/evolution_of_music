@@ -123,6 +123,9 @@ def draw_graph(G, pos, music_genres, milestones, current_year, output_file="evol
     # タイトルや軸などを非表示にし、純粋なグラフデータだけにする
     ax.axis('off')
 
-    # bbox_inches='tight'を外すことで余白計算を完全に固定
-    plt.savefig(output_file, dpi=100, facecolor='#111111')
+    # SVGを軽量・高速にするための設定
+    plt.rcParams['svg.image_inline'] = True
+    
+    # bbox_inches='tight'を外すことで余白計算を完全に固定し、軽量SVGとして保存
+    plt.savefig(output_file, dpi=100, facecolor='#111111', format='svg', metadata={'Creator': 'The River of Music'})
     plt.close()
