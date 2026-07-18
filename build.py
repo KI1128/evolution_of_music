@@ -54,10 +54,34 @@ def main():
         
         coords[genre] = {"x": round(px_x, 2), "y": round(px_y, 2)}
 
+    milestones_data = []
+    for m in milestones:
+        m_genre = m["genre"]
+        if m_genre in pos:
+            # X座標はマイルストーンの発表年
+            m_x = warp_time(m["year"])
+            m_x_pct = (m_x - x_min_val) / (x_max_val - x_min_val)
+            m_px_x = width_px * 0.05 + m_x_pct * (width_px * 0.90)
+            
+            # Y座標は属するジャンルの基本位置を利用
+            m_y = pos[m_genre][1]
+            m_y_pct = (m_y - y_min_val) / (y_max_val - y_min_val)
+            m_px_y = top_margin_px + (1.0 - m_y_pct) * plot_height_px
+
+            milestones_data.append({
+                "work": m["work"],
+                "artist": m["artist"],
+                "year": m["year"],
+                "genre": m_genre,
+                "x": round(m_px_x, 2),
+                "y": round(m_px_y, 2)
+            })
+
     # JSファイルとして保存
     with open("coordinates.js", "w", encoding="utf-8") as f:
         f.write(f"const imageConfig = {{ width: {width_px}, height: {height_px} }};\n")
         f.write(f"const genreCoordinates = {json.dumps(coords, ensure_ascii=False)};\n")
+        f.write(f"const milestoneCoordinates = {json.dumps(milestones_data, ensure_ascii=False)};\n")
     
     # ====================================================
 

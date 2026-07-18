@@ -11,9 +11,12 @@
         #image { transform-origin: 0 0; display: block; user-select: none; -webkit-user-drag: none; }
         
         #header-title { position: absolute; top: 0; width: 100%; text-align: center; padding: 15px 0; font-size: 24px; font-weight: bold; background: linear-gradient(rgba(0,0,0,0.8), transparent); pointer-events: none; z-index: 50; text-shadow: 0 2px 4px #000; }
+
+        #toggle-ui-btn { position: absolute; top: 15px; left: 20px; z-index: 101; background: #1565C0; box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
+        #toggle-ui-btn:hover { background: #1976D2; }
         
         /* 検索UIのデザイン */
-        #ui { position: absolute; top: 60px; left: 20px; background: rgba(0,0,0,0.85); padding: 15px; border-radius: 8px; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.8); width: 280px; display: flex; flex-direction: column; max-height: calc(100vh - 140px); }
+        #ui { position: absolute; top: 65px; left: 20px; background: rgba(0,0,0,0.85); padding: 15px; border-radius: 8px; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.8); width: 280px; display: flex; flex-direction: column; max-height: calc(100vh - 140px); }
         #genre-search { padding: 8px; background: #222; color: white; border: 1px solid #555; border-radius: 4px; margin-bottom: 10px; font-size: 14px; width: 100%; box-sizing: border-box; }
         #genre-list { overflow-y: auto; display: flex; flex-direction: column; gap: 4px; padding-right: 5px; margin-bottom: 10px; }
         
@@ -27,9 +30,11 @@
 <body>
     <div id="header-title">The Evolution of Music</div>
     
+    <button id="toggle-ui-btn" onclick="toggleUI()">👁️ 検索を非表示</button>
+
     <div id="ui">
-        <label style="margin-bottom: 8px; font-size: 14px; font-weight: bold;">🔍 ジャンルを検索・移動</label>
-        <input type="text" id="genre-search" placeholder="ジャンル名を入力...">
+        <label style="margin-bottom: 8px; font-size: 14px; font-weight: bold;">🔍 ジャンル・曲を検索</label>
+        <input type="text" id="genre-search" placeholder="ジャンル、曲名、アーティスト...">
         <div id="genre-list"></div>
         <button onclick="resetView()">🗺️ 全体表示に戻す</button>
     </div>
@@ -48,22 +53,49 @@
         let isDragging = false, startX, startY;
         let animationFrame;
 
+        function toggleUI() {
+            const ui = document.getElementById('ui');
+            const btn = document.getElementById('toggle-ui-btn');
+            if (ui.style.display === 'none') {
+                ui.style.display = 'flex';
+                btn.innerText = '👁️ 検索を非表示';
+            } else {
+                ui.style.display = 'none';
+                btn.innerText = '🔍 検索を表示';
+            }
+        }
+
         // --- 1. ジャンルリストの描画 ---
         function renderList(filter = '') {
             genreListEl.innerHTML = '';
-            // genreCoordinates は coordinates.js で定義されている
-            const genres = Object.keys(genreCoordinates).sort();
+            const lowerFilter = filter.toLowerCase();
             
+            // 1. ジャンルの検索と描画
+            const genres = Object.keys(genreCoordinates).sort();
             genres.forEach(g => {
-                if (g.toLowerCase().includes(filter.toLowerCase())) {
+                if (g.toLowerCase().includes(lowerFilter)) {
                     const el = document.createElement('div');
                     el.className = 'genre-item';
-                    el.innerText = g;
-                    // クリックしたらそのジャンルへジャンプ！
-                    el.onclick = () => jumpToGenre(g);
+                    el.innerText = `🎵 ${g}`; // アイコンで区別
+                    el.onclick = () => jumpToPosition(genreCoordinates[g].x, genreCoordinates[g].y);
                     genreListEl.appendChild(el);
                 }
             });
+
+            // 2. マイルストーンの検索と描画
+            if (typeof milestoneCoordinates !== 'undefined') {
+                milestoneCoordinates.forEach(m => {
+                    // 曲名・アーティスト名・年・ジャンル名のどれにでもヒットするようにする
+                    const searchTarget = `${m.work} ${m.artist} ${m.year} ${m.genre}`.toLowerCase();
+                    if (searchTarget.includes(lowerFilter)) {
+                        const el = document.createElement('div');
+                        el.className = 'genre-item';
+                        el.innerText = `💿 ${m.work} / ${m.artist} (${m.year})`; // アイコンで区別
+                        el.onclick = () => jumpToPosition(m.x, m.y);
+                        genreListEl.appendChild(el);
+                    }
+                });
+            }
         }
         searchInput.addEventListener('input', (e) => renderList(e.target.value));
         renderList();
@@ -100,17 +132,13 @@
             animationFrame = requestAnimationFrame(step);
         }
 
-        function jumpToGenre(genreName) {
-            const coord = genreCoordinates[genreName];
-            if (!coord) return;
-            
-            // 画面の中央に持ってきたいので、逆算する
+        function jumpToPosition(targetX, targetY) {
             const targetScale = 2.0; // ズームインの強さ
             const screenW = window.innerWidth;
             const screenH = window.innerHeight;
             
-            const targetPosX = (screenW / 2) - (coord.x * targetScale);
-            const targetPosY = (screenH / 2) - (coord.y * targetScale);
+            const targetPosX = (screenW / 2) - (targetX * targetScale);
+            const targetPosY = (screenH / 2) - (targetY * targetScale);
             
             animateTo(targetPosX, targetPosY, targetScale);
         }
