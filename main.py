@@ -6,9 +6,9 @@ import webbrowser
 import os
 import json
 
-from data import load_data, filter_by_genre, CURRENT_YEAR
-from layout import calculate_layout
-from render import draw_graph
+from src.data import load_data, filter_by_genre, CURRENT_YEAR
+from src.layout import calculate_layout
+from src.render import draw_graph
 
 PORT = 8000
 

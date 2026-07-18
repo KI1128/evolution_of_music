@@ -5,7 +5,7 @@ from datetime import datetime
 CURRENT_YEAR = datetime.now().year
 DISPLAY_YEARS = [1000, 1400, 1600, 1800, 1900, 1930, 1960, 1980, 2000, 2020]
 
-def load_data(genres_csv="genres.csv", milestones_csv="milestones.csv"):
+def load_data(genres_csv="data/genres.csv", milestones_csv="data/milestones.csv"):
     music_genres = {}
     with open(genres_csv, mode='r', encoding='utf-8-sig') as f:
         reader = csv.DictReader(f)

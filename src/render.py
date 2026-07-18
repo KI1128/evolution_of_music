@@ -1,7 +1,7 @@
 # render.py
 import matplotlib.pyplot as plt
 import numpy as np
-from layout import warp_time
+from src.layout import warp_time
 
 plt.rcParams['font.family'] = ['Meiryo', 'Yu Gothic', 'MS Gothic', 'sans-serif']
 plt.rcParams['svg.fonttype'] = 'none'

@@ -1,4 +1,4 @@
-from data import load_data, get_ancestors
+from src.data import load_data, get_ancestors
 from collections import defaultdict
 
 def main():
