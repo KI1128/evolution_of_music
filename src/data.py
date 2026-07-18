@@ -20,7 +20,7 @@ def load_data(genres_csv="data/genres.csv", milestones_csv="data/milestones.csv"
             if row.get('successor'):
                 music_genres[genre]['successor'] = row['successor']
             if row.get('end_year'):
-                music_genres[genre]['end_year'] = int(row['end_year'])
+                music_genres[genre]['end_year'] = int(float(row['end_year']))
                 
     milestones = []
     with open(milestones_csv, mode='r', encoding='utf-8-sig') as f:
