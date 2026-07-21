@@ -1,371 +1,1234 @@
 ﻿year,genre,artist,work
-1824,Romantic,Beethoven,Symphony No. 9
-1913,Modern Classical,Stravinsky,The Rite of Spring
-1959,Jazz,Miles Davis,Kind of Blue
-1965,Funk,James Brown,Papa's Got a Brand New Bag
-1979,Hip Hop,The Sugarhill Gang,Rapper's Delight
-1980,City Pop,Tatsuro Yamashita,Ride on Time
-1982,Pop,Michael Jackson,Thriller
-1986,House,Frankie Knuckles,Your Love
-1991,Grunge,Nirvana,Nevermind
-1994,Hip Hop,Nas,Illmatic
-2012,EDM,Avicii,Levels
-2017,Bedroom Pop,Clairo,Pretty Girl
-1927,New Orleans Jazz,Louis Armstrong,Potato Head Blues
-1956,Calypso,Harry Belafonte,Calypso
-1973,Reggae,The Wailers,Catch a Fire
-1989,New Jack Swing,Janet Jackson,Rhythm Nation 1814
-2011,Synthwave,Kavinsky,Nightcall
+1098,Medieval,Hildegard von Bingen,Symphonia armonie celestium revelationum
+1151,Medieval,Hildegard von Bingen,Ordo Virtutum
+1190,Medieval,Leonin,Magnus Liber Organi
+1200,Medieval,Perotin,Viderunt omnes
+1250,Medieval,Anonymous,Sumer is icumen in
+1300,Medieval,Philippe de Vitry,Ars Nova motets
+1350,Medieval,Guillaume de Machaut,Douce Dame Jolie
+1364,Medieval,Guillaume de Machaut,Messe de Nostre Dame
+1390,Medieval,Francesco Landini,Ecco la primavera
+1436,Renaissance,Guillaume Du Fay,Nuper rosarum flores
+1440,Renaissance,John Dunstaple,Quam pulchra es
+1470,Renaissance,Johannes Ockeghem,Missa prolationum
+1502,Renaissance,Josquin des Prez,Missa Pange lingua
+1562,Renaissance,Giovanni Pierluigi da Palestrina,Missa Papae Marcelli
+1570,Renaissance,Thomas Tallis,Spem in alium
+1589,Renaissance,William Byrd,Songs of Sundrie Natures
+1597,Renaissance,John Dowland,First Booke of Songes
+1597,Renaissance,Giovanni Gabrieli,Sacrae symphoniae
+1601,Renaissance,Carlo Gesualdo,Madrigals Book 5
 1607,Opera,Claudio Monteverdi,L'Orfeo
+1610,Baroque,Claudio Monteverdi,Vespro della Beata Vergine
+1632,Baroque,Gregorio Allegri,Miserere
+1642,Baroque,Claudio Monteverdi,L'incoronazione di Poppea
+1680,Baroque,Dieterich Buxtehude,Membra Jesu Nostri
+1681,Baroque,Arcangelo Corelli,Trio Sonatas Op. 1
+1689,Opera,Henry Purcell,Dido and Aeneas
+1700,Baroque,Arcangelo Corelli,12 Violin Sonatas Op. 5
+1713,Baroque,Francois Couperin,Pieces de clavecin
+1717,Baroque,George Frideric Handel,Water Music
+1721,Baroque,J.S. Bach,Brandenburg Concertos
+1722,Baroque,J.S. Bach,The Well-Tempered Clavier
+1724,Baroque,J.S. Bach,St. John Passion
 1725,Baroque,Antonio Vivaldi,The Four Seasons
-1964,Minimalism,Terry Riley,In C
+1727,Baroque,J.S. Bach,St. Matthew Passion
+1733,Baroque,Jean-Philippe Rameau,Hippolyte et Aricie
+1733,Baroque,J.S. Bach,Mass in B minor
+1738,Baroque,Domenico Scarlatti,Essercizi per Gravicembalo
+1741,Baroque,J.S. Bach,Goldberg Variations
+1742,Baroque,George Frideric Handel,Messiah
+1749,Baroque,J.S. Bach,The Art of Fugue
+1749,Baroque,George Frideric Handel,Music for the Royal Fireworks
+1753,Classical,C.P.E. Bach,Keyboard Sonatas
+1762,Classical,Christoph Willibald Gluck,Orfeo ed Euridice
+1768,Classical,Joseph Haydn,"Symphony No. 49 ""La passione"""
+1776,Classical,Wolfgang Amadeus Mozart,"Serenade No. 7 ""Haffner"""
+1781,Classical,Joseph Haydn,String Quartets Op. 33
+1786,Classical,Wolfgang Amadeus Mozart,The Marriage of Figaro
+1787,Classical,Wolfgang Amadeus Mozart,Don Giovanni
+1787,Classical,Wolfgang Amadeus Mozart,Eine kleine Nachtmusik
+1788,Classical,W.A. Mozart,Symphony No. 40
+1788,Classical,Wolfgang Amadeus Mozart,Symphony No. 41
+1791,Classical,W.A. Mozart,Requiem
+1791,Classical,Wolfgang Amadeus Mozart,The Magic Flute
+1791,Classical,Joseph Haydn,"Symphony No. 94 ""Surprise"""
+1798,Classical,Joseph Haydn,The Creation
+1798,Classical,Ludwig van Beethoven,"Piano Sonata No. 8 ""Pathetique"""
+1804,Classical,Ludwig van Beethoven,"Symphony No. 3 ""Eroica"""
+1808,Celtic Folk,Thomas Moore,Irish Melodies
+1808,Classical,Ludwig van Beethoven,Symphony No. 5
+1811,Classical,Ludwig van Beethoven,"Piano Trio No. 7 ""Archduke"""
+1824,Romantic,Beethoven,Symphony No. 9
+1824,Romantic,Franz Schubert,"String Quartet No. 14 ""Death and the Maiden"""
+1826,Romantic,Felix Mendelssohn,A Midsummer Night's Dream Overture
+1827,Romantic,Franz Schubert,Winterreise
+1830,Romantic,Hector Berlioz,Symphonie fantastique
+1830,Romantic,Frederic Chopin,Nocturnes Op. 9
+1832,Romantic,Frederic Chopin,Etudes Op. 10
+1838,Romantic,Robert Schumann,Kreisleriana
+1842,Romantic,Mikhail Glinka,Ruslan and Lyudmila
+1845,Romantic,Richard Wagner,Tannhauser
+1846,Romantic,Felix Mendelssohn,Elijah
+1851,Romantic,Giuseppe Verdi,Rigoletto
+1853,Romantic,Giuseppe Verdi,La traviata
+1853,Romantic,Franz Liszt,Piano Sonata in B minor
+1858,Romantic,Jacques Offenbach,Orpheus in the Underworld
+1865,Opera,Richard Wagner,Tristan und Isolde
+1868,Romantic,Johannes Brahms,A German Requiem
+1869,Romantic,Modest Mussorgsky,Boris Godunov
+1871,Spirituals,Fisk Jubilee Singers,"Swing Low, Sweet Chariot"
+1874,Romantic,Modest Mussorgsky,Pictures at an Exhibition
+1874,Romantic,Bedrich Smetana,Ma Vlast
+1875,Romantic,Georges Bizet,Carmen
+1876,Romantic,Johannes Brahms,Symphony No. 1
+1876,Romantic,Richard Wagner,Der Ring des Nibelungen
+1877,Romantic,Pyotr Ilyich Tchaikovsky,Swan Lake
+1878,Romantic,Pyotr Ilyich Tchaikovsky,Violin Concerto
+1881,Romantic,Pyotr Ilyich Tchaikovsky,Piano Concerto No. 1
+1882,Traditional Folk,Francis James Child,Child Ballads
+1883,Romantic,Johannes Brahms,Symphony No. 3
+1885,Romantic,Anton Bruckner,Symphony No. 7
+1886,Romantic,Camille Saint-Saens,The Carnival of the Animals
+1886,Romantic,Camille Saint-Saens,"Symphony No. 3 ""Organ"""
+1888,Romantic,Gustav Mahler,Symphony No. 1
+1888,Romantic,Nikolai Rimsky-Korsakov,Scheherazade
+1889,Romantic,Antonin Dvorak,Symphony No. 8
+1890,Romantic,Gabriel Faure,Requiem
+1892,Romantic,Pyotr Ilyich Tchaikovsky,The Nutcracker
+1893,Romantic,Antonin Dvorak,"Symphony No. 9 ""From the New World"""
+1893,Romantic,Pyotr Ilyich Tchaikovsky,"Symphony No. 6 ""Pathetique"""
+1894,Modern Classical,Claude Debussy,Prélude à l'après-midi d'un faune
+1896,Romantic,Giacomo Puccini,La boheme
+1896,Romantic,Richard Strauss,Also sprach Zarathustra
+1899,Romantic,Jean Sibelius,Symphony No. 1
+1899,Romantic,Edward Elgar,Enigma Variations
+1899,Ragtime,Scott Joplin,Maple Leaf Rag
+1900,Romantic,Giacomo Puccini,Tosca
+1901,Romantic,Sergei Rachmaninoff,Piano Concerto No. 2
+1902,Romantic,Gustav Mahler,Symphony No. 5
+1902,Ragtime,Scott Joplin,The Entertainer
+1903,Modern Classical,Maurice Ravel,String Quartet
+1904,Romantic,Giacomo Puccini,Madama Butterfly
+1905,Modern Classical,Claude Debussy,La mer
+1908,Modern Classical,Arnold Schoenberg,String Quartet No. 2
+1909,Modern Classical,Arnold Schoenberg,Erwartung
+1910,Modern Classical,Igor Stravinsky,The Firebird
+1911,Romantic,Richard Strauss,Der Rosenkavalier
+1911,Romantic,Gustav Mahler,Das Lied von der Erde
+1912,Avant-Garde Classical,Arnold Schoenberg,Pierrot Lunaire
+1913,Modern Classical,Stravinsky,The Rite of Spring
+1914,Blues,W.C. Handy,St. Louis Blues
+1914,Modern Classical,Gustav Holst,The Planets
+1914,Modern Classical,Ralph Vaughan Williams,The Lark Ascending
+1914,Modern Classical,Ralph Vaughan Williams,A London Symphony
+1917,Samba,Donga,Pelo Telefone
+1920,Blues,Mamie Smith,Crazy Blues
+1923,New Orleans Jazz,King Oliver's Creole Jazz Band,Dipper Mouth Blues
+1923,Country,Fiddlin' John Carson,The Little Old Log Cabin in the Lane
+1924,Modern Classical,George Gershwin,Rhapsody in Blue
+1924,Jazz,Fletcher Henderson,Copenhagen
+1925,New Orleans Jazz,Louis Armstrong,Hot Fives & Sevens
+1925,Blues,Blind Lemon Jefferson,Black Snake Moan
+1926,New Orleans Jazz,Jelly Roll Morton,Black Bottom Stomp
+1927,New Orleans Jazz,Louis Armstrong,Potato Head Blues
+1927,Country,The Carter Family,Bristol Sessions
+1927,Jazz,Bix Beiderbecke,Singin' the Blues
+1927,Country,The Carter Family,Single Girl Married Girl
+1927,Country,Jimmie Rodgers,Blue Yodel No. 1
+1927,Blues,Blind Lemon Jefferson,Matchbox Blues
+1927,Gospel,Blind Willie Johnson,Dark Was the Night Cold Was the Ground
+1928,Country,The Carter Family,Wildwood Flower
+1928,Blues,Mississippi John Hurt,Frankie
+1928,Blues,Tommy Johnson,Canned Heat Blues
+1928,Boogie-Woogie,Pine Top Smith,Pine Top's Boogie Woogie
+1929,Delta Blues,Charley Patton,Pony Blues
+1929,Blues,Blind Blake,Diddie Wa Diddie
+1930,Delta Blues,Son House,Preachin' the Blues
+1930,Traditional Folk,Bascom Lamar Lunsford,I Wish I Was a Mole in the Ground
+1931,Delta Blues,Skip James,Devil Got My Woman
+1933,Jazz,Art Tatum,Tiger Rag
+1935,Swing,Benny Goodman,"Sing, Sing, Sing"
 1936,Delta Blues,Robert Johnson,Cross Road Blues
-1947,Gospel,Mahalia Jackson,Move On Up a Little Higher
-1949,Country,Hank Williams,I'm So Lonesome I Could Cry
-1954,Electric Blues,Muddy Waters,Hoochie Coochie Man
-1965,Folk Rock,Bob Dylan,Bringing It All Back Home
+1936,Blues,Robert Johnson,King of the Delta Blues Singers
+1937,Swing,Count Basie,One O'Clock Jump
+1937,Delta Blues,Robert Johnson,Hellhound on My Trail
+1937,Gypsy Jazz,Quintette du Hot Club de France,The Quintet of the Hot Club of France
+1938,Gospel,Sister Rosetta Tharpe,Rock Me
+1938,Swing,Artie Shaw,Begin the Beguine
+1938,Swing,Benny Goodman,The Famous 1938 Carnegie Hall Jazz Concert
+1938,Boogie-Woogie,Albert Ammons & Meade Lux Lewis,The First Day
+1939,Jazz,Billie Holiday,Strange Fruit
+1939,Traditional Folk,Lead Belly,The Midnight Special
+1939,Swing,Glenn Miller,In the Mood
+1939,Jazz,Coleman Hawkins,Body and Soul
+1939,Samba,Carmen Miranda,O Que É Que A Baiana Tem?
+1939,Calypso,Roaring Lion,Mary Ann
+1939,Swing,Duke Ellington,Blanton-Webster Band Era Recordings
+1940,Traditional Folk,Woody Guthrie,Dust Bowl Ballads
+1940,Traditional Folk,Woody Guthrie,This Land Is Your Land
 1941,Swing,Duke Ellington,Take the 'A' Train
-1945,Bebop,Charlie Parker,Ko-Ko
-1959,Free Jazz,Ornette Coleman,The Shape of Jazz to Come
-1973,Jazz Fusion,Herbie Hancock,Head Hunters
-1959,R&B,Ray Charles,What'd I Say
-1967,Soul,Aretha Franklin,I Never Loved a Man the Way I Love You
-1977,Disco,Bee Gees,Saturday Night Fever
-1997,Neo Soul,Erykah Badu,Baduizm
-2003,Trap,T.I.,Trap Muzik
+1941,Avant-Garde Classical,Olivier Messiaen,Quartet for the End of Time
+1941,Blues,Muddy Waters,Country Blues
+1944,Gospel,Sister Rosetta Tharpe,Strange Things Happening Every Day
+1944,Modern Classical,Aaron Copland,Appalachian Spring
+1945,Bebop,Dizzy Gillespie,Salt Peanuts
+1945,Bebop,Charlie Parker & Dizzy Gillespie,Ko-Ko
+1946,R&B,Louis Jordan,Choo Choo Ch'Boogie
+1947,Gospel,Mahalia Jackson,Move On Up a Little Higher
+1947,Bebop,Thelonious Monk,Genius of Modern Music
+1947,Bebop,Dizzy Gillespie & Chano Pozo,Manteca
+1947,R&B,Wynonie Harris,Good Rockin' Tonight
+1947,Bluegrass,Bill Monroe and His Blue Grass Boys,Blue Moon of Kentucky
+1948,Calypso,Lord Kitchener,London Is the Place for Me
+1948,Electric Blues,John Lee Hooker,Boogie Chillen'
+1949,Country,Hank Williams,I'm So Lonesome I Could Cry
+1949,Bluegrass,Flatt & Scruggs,Foggy Mountain Breakdown
+1949,Electric Blues,T-Bone Walker,Call It Stormy Monday
+1949,R&B,Fats Domino,The Fat Man
+1949,R&B,Professor Longhair,Mardi Gras in New Orleans
+1949,Bebop,Bud Powell,The Amazing Bud Powell
+1950,Blues,Muddy Waters,Rollin' Stone
+1950,Jazz,Sarah Vaughan,Sarah Vaughan in Hi-Fi
+1951,Rock and Roll,Jackie Brenston and his Delta Cats,Rocket 88
+1952,Avant-Garde Classical,John Cage,"4'33"""
+1952,Cool Jazz,Gerry Mulligan Quartet,Gerry Mulligan Quartet Volume 1
+1952,Country,Hank Williams,Jambalaya (On the Bayou)
+1952,Traditional Folk,Various Artists,Anthology of American Folk Music
+1952,Gamelan,Gamelan of Peliatan,Gamelan of Bali
+1953,Bebop,Charlie Parker & Dizzy Gillespie,Jazz at Massey Hall
+1953,Blues,Big Mama Thornton,Hound Dog
+1954,Electric Blues,Muddy Waters,Hoochie Coochie Man
+1954,Cool Jazz,Chet Baker,Chet Baker Sings
+1954,Doo-Wop,The Chords,Sh-Boom
+1954,R&B,Ray Charles,I've Got a Woman
+1954,Jazz,Art Blakey,A Night at Birdland
+1954,Jazz,Clifford Brown & Max Roach,Clifford Brown and Max Roach
+1954,Latin Jazz,Dizzy Gillespie,Afro
+1955,Afro-Cuban,Celia Cruz,Canta Celia Cruz
+1955,Rock and Roll,Chuck Berry,Maybellene
+1955,Rock and Roll,Little Richard,Tutti Frutti
+1955,Rock and Roll,Bo Diddley,Bo Diddley
+1955,Pop,Frank Sinatra,In the Wee Small Hours
+1955,Mambo,Pérez Prado,Mambo Mania
+1956,Calypso,Harry Belafonte,Calypso
 1956,Rock and Roll,Elvis Presley,Hound Dog
-1967,Psychedelic Rock,The Jimi Hendrix Experience,Are You Experienced
-1969,Progressive Rock,King Crimson,In the Court of the Crimson King
-1970,Heavy Metal,Black Sabbath,Black Sabbath
-1976,Punk Rock,Ramones,Ramones
-1979,Post-Punk,Joy Division,Unknown Pleasures
-1980,New Wave,Talking Heads,Remain in Light
-1981,Hardcore Punk,Black Flag,Damaged
-1991,Grunge,Pearl Jam,Ten
-1991,Shoegaze,My Bloody Valentine,Loveless
-1994,Nu Metal,Korn,Korn
-1999,Emo,American Football,American Football
-2001,Indie Rock,The Strokes,Is This It
-1974,Electronic Art Music,Kraftwerk,Autobahn
-1978,Ambient,Brian Eno,Ambient 1: Music for Airports
-1983,Synth-pop,Eurythmics,Sweet Dreams (Are Made of This)
-1985,Techno,Model 500,No UFO's
-1992,IDM,Aphex Twin,Selected Ambient Works 85-92
-1994,Trance,Paul van Dyk,For an Angel
-1995,Drum and Bass,Goldie,Timeless
-2007,Dubstep,Burial,Untrue
-2011,Vaporwave,Macintosh Plus,Floral Shoppe
+1956,Bebop,Thelonious Monk,Brilliant Corners
+1956,Bebop,Sonny Rollins,Saxophone Colossus
+1956,Rock and Roll,Elvis Presley,Elvis Presley
+1956,Jazz,Duke Ellington,Ellington at Newport
+1956,Rock and Roll,Gene Vincent,Be-Bop-A-Lula
+1956,Rock and Roll,Carl Perkins,Blue Suede Shoes
+1956,Rock and Roll,Fats Domino,This Is Fats Domino!
+1956,Polka,Frank Yankovic,Polka Party
+1956,Rockabilly,Carl Perkins,Dance Album of Carl Perkins
+1956,Jazz,Ella Fitzgerald & Louis Armstrong,Ella and Louis
+1956,Tin Pan Alley,Ella Fitzgerald,Ella Fitzgerald Sings the Cole Porter Songbook
+1956,Tin Pan Alley,Frank Sinatra,Songs for Swingin' Lovers!
+1956,Rockabilly,Gene Vincent and His Blue Caps,Bluejean Bop!
+1957,Cool Jazz,Miles Davis,Birth of the Cool
+1957,Cool Jazz,Art Pepper,Meets the Rhythm Section
+1957,Rock and Roll,Jerry Lee Lewis,Whole Lotta Shakin' Goin' On
+1957,Rock and Roll,Buddy Holly and the Crickets,The Chirping Crickets
+1957,Rock and Roll,The Everly Brothers,The Everly Brothers
+1957,Jazz,John Coltrane,Blue Train
+1957,Mento,Lord Flea,Swingin' Calypsos
+1957,Rockabilly,Carl Perkins,Dance Album
+1958,Rock and Roll,Chuck Berry,Johnny B. Goode
+1958,Bebop,Art Blakey and the Jazz Messengers,Moanin'
+1958,Mambo,Tito Puente,Dance Mania
+1958,Electronic Art Music,Edgard Varèse,Poème électronique
+1958,Rock and Roll,Ritchie Valens,La Bamba
+1958,March,Eastman Wind Ensemble,Marching Along
+1958,Jazz,Cannonball Adderley,Somethin' Else
+1958,Spirituals,Mahalia Jackson,Live at Newport 1958
+1958,Afro-Cuban,Machito,Kenya
+1958,Afro-Cuban,Mongo Santamaría,Afro Roots
+1958,Mambo,Beny Moré,Magia Antillana
+1959,Jazz,Miles Davis,Kind of Blue
+1959,Free Jazz,Ornette Coleman,The Shape of Jazz to Come
+1959,R&B,Ray Charles,What'd I Say
+1959,Cool Jazz,The Dave Brubeck Quartet,Time Out
+1959,Jazz,Charles Mingus,Mingus Ah Um
+1959,Traditional Folk,Shirley Collins,Sweet England
+1959,Bossa Nova,Antônio Carlos Jobim,Chega de Saudade (Album)
+1959,R&B,The Isley Brothers,Shout
+1959,Waltz,Vienna Philharmonic (Willi Boskovsky),Strauss Waltzes
+1959,Chanson,Jacques Brel,La Valse à mille temps
+1959,Jazz,Horace Silver,Blowin' the Blues Away
+1959,Mariachi,Mariachi Vargas de Tecalitlán,El Mejor Mariachi del Mundo
+1959,Doo-Wop,The Flamingos,Flamingo Serenade
+1959,Doo-Wop,Dion and the Belmonts,Presenting Dion and the Belmonts
+1960,Folk Revival,Joan Baez,Joan Baez
+1960,Jazz,John Coltrane,Giant Steps
+1960,Bluegrass,The Stanley Brothers,Rank Stranger
+1960,Free Jazz,Ornette Coleman,Free Jazz
+1960,R&B,Etta James,At Last!
+1960,Rock and Roll,Eddie Cochran,The Memorial Album
+1960,Pop,Roy Orbison,Only the Lonely
+1960,Free Jazz,Eric Dolphy,Out There
+1961,Cool Jazz,Bill Evans Trio,Sunday at the Village Vanguard
+1961,Country,Patsy Cline,Showcase
+1961,R&B,Ben E. King,Stand By Me
+1961,R&B,The Marvelettes,Please Mr. Postman
+1961,Jazz,Oliver Nelson,The Blues and the Abstract Truth
+1961,March,Eastman Wind Ensemble,Sousa on Review
+1961,Gypsy Jazz,Django Reinhardt & Stéphane Grappelli,Djangology 49
+1962,Celtic Folk,The Dubliners,The Dubliners
+1962,Bossa Nova,Stan Getz & Charlie Byrd,f
+1962,R&B,Booker T. & the M.G.'s,Green Onions
+1962,Pop,The Four Seasons,Sherry & 11 Others
+1962,Soul,Ray Charles,Modern Sounds in Country and Western Music
+1962,Jazz,Dexter Gordon,Go!
+1962,Chanson,Jacques Brel,Olympia 1961
+1963,Jazz,Charles Mingus,The Black Saint and the Sinner Lady
+1963,Soul,James Brown,Live at the Apollo
+1963,Pop,The Ronettes,Be My Baby
+1963,Surf Rock,The Surfaris,Wipe Out
+1963,Surf Rock,Dick Dale,Surfer's Choice
+1963,Folk Revival,Bob Dylan,The Freewheelin' Bob Dylan
+1963,Jazz,Lee Morgan,The Sidewinder
+1963,Rock and Roll,The Beatles,Please Please Me
+1963,Rock and Roll,The Beatles,With the Beatles
+1964,Minimalism,Terry Riley,In C
 1964,Ska,The Skatalites,Guns of Navarone
 1964,Bossa Nova,Stan Getz & João Gilberto,Getz/Gilberto
-1976,Afrobeat,Fela Kuti,Zombie
-1978,Salsa,Willie Colón & Rubén Blades,Siembra
-1985,Dancehall,Wayne Smith,Under Mi Sleng Teng
-2004,Reggaeton,Daddy Yankee,Barrio Fino
-2019,Amapiano,Kabza De Small,Scorpion Kings
-1999,J-Pop,Hikaru Utada,First Love
-2006,Lo-Fi Hip Hop,J Dilla,Donuts
-2008,Modern Pop,Lady Gaga,The Fame
-2009,K-Pop,Girls' Generation,Gee
-2019,Hyperpop,100 gecs,1000 gecs
-1436,Medieval,Guillaume Du Fay,Nuper rosarum flores
-1562,Renaissance,Giovanni Pierluigi da Palestrina,Missa Papae Marcelli
-1788,Classical,W.A. Mozart,Symphony No. 40
-1952,Avant-Garde Classical,John Cage,"4'33"""
-1808,Celtic Folk,Thomas Moore,Irish Melodies
-1882,Traditional Folk,Francis James Child,Child Ballads
-1871,Spirituals,Fisk Jubilee Singers,"Swing Low, Sweet Chariot"
-1947,Bluegrass,Bill Monroe,Blue Moon of Kentucky
-1960,Folk Revival,Joan Baez,Joan Baez
-1917,Samba,Donga,Pelo Telefone
-1959,Cool Jazz,The Dave Brubeck Quartet,Time Out
-1721,Baroque,J.S. Bach,Brandenburg Concertos
-1791,Classical,Joseph Haydn,Symphony No. 94 'Surprise'
-1830,Romantic,Frédéric Chopin,Nocturnes Op. 9
-1877,Romantic,Pyotr Ilyich Tchaikovsky,Swan Lake
-1967,Pop,The Beatles,Sgt. Pepper's Lonely Hearts Club Band
-1969,Rock and Roll,The Beatles,Abbey Road
-1986,Thrash Metal,Metallica,Master of Puppets
-1997,Alternative Rock,Radiohead,OK Computer
-1971,Soul,Marvin Gaye,What's Going On
-1976,Soul,Stevie Wonder,Songs in the Key of Life
-1988,Alternative Hip Hop,Public Enemy,It Takes a Nation of Millions...
-1998,Neo Soul,Lauryn Hill,The Miseducation of Lauryn Hill
-2015,Hip Hop,Kendrick Lamar,To Pimp a Butterfly
-2001,House,Daft Punk,Discovery
-2010,Dubstep,Skrillex,Scary Monsters and Nice Sprites
-1920,Blues,Mamie Smith,Crazy Blues
-1914,Blues,W.C. Handy,St. Louis Blues
+1964,Free Jazz,Eric Dolphy,Out to Lunch!
+1964,Soul,Sam Cooke,Ain't That Good News
+1964,Free Jazz,Albert Ayler,Spiritual Unity
+1964,Pop,The Shangri-Las,Leader of the Pack
+1964,Rock and Roll,The Beatles,A Hard Day's Night
+1964,Rock and Roll,The Animals,The Animals
+1964,Rock and Roll,The Kinks,Kinks
+1964,Motown,The Supremes,Where Did Our Love Go
+1965,Funk,James Brown,Papa's Got a Brand New Bag
+1965,Folk Rock,Bob Dylan,Bringing It All Back Home
 1965,Jazz,John Coltrane,A Love Supreme
-1956,Bebop,Thelonious Monk,Brilliant Corners
-1971,Heavy Metal,Led Zeppelin,Led Zeppelin IV
-1972,Rock and Roll,The Rolling Stones,Exile on Main St.
-1972,Psychedelic Rock,David Bowie,The Rise and Fall of Ziggy Stardust...
-1973,Progressive Rock,Pink Floyd,The Dark Side of the Moon
-1975,Rock and Roll,Queen,A Night at the Opera
-1977,Punk Rock,Sex Pistols,Never Mind the Bollocks
-1987,Hardcore Punk,Fugazi,13 Songs
-1976,Pop,ABBA,Dancing Queen
-1984,Pop,Madonna,Like a Virgin
-1984,R&B,Prince,Purple Rain
-1972,Funk,Stevie Wonder,Superstition
-1993,Hip Hop,Wu-Tang Clan,Enter the Wu-Tang (36 Chambers)
-1996,Hip Hop,2Pac,All Eyez on Me
-2000,Neo Soul,D'Angelo,Voodoo
-2000,Hip Hop,Eminem,The Marshall Mathers LP
-1977,Electronic Art Music,Kraftwerk,Trans-Europe Express
-1997,Techno,The Prodigy,The Fat of the Land
-2001,IDM,Aphex Twin,Drukqs
-1958,Rock and Roll,Chuck Berry,Johnny B. Goode
+1965,Electric Blues,B.B. King,Live at the Regal
+1965,Soul,Otis Redding,Otis Blue
+1965,Rock and Roll,The Who,My Generation
+1965,Folk Rock,The Byrds,Mr. Tambourine Man
+1965,Soul,The Impressions,People Get Ready
+1965,Pop,The Righteous Brothers,You've Lost That Lovin' Feelin'
+1965,Pop,The Beach Boys,The Beach Boys Today!
+1965,Soul,Nina Simone,I Put a Spell on You
+1965,European Folk,The Watersons,Frost and Fire
+1965,Rock and Roll,Bob Dylan,Highway 61 Revisited
+1965,Jazz,Herbie Hancock,Maiden Voyage
+1965,Rock and Roll,The Beatles,Rubber Soul
+1965,Rock and Roll,The Rolling Stones,Out of Our Heads
+1965,Blues,The Paul Butterfield Blues Band,The Paul Butterfield Blues Band
 1966,Pop,The Beach Boys,Pet Sounds
+1966,Jazz,Wayne Shorter,Speak No Evil
+1966,Free Jazz,Cecil Taylor,Unit Structures
+1966,Folk Rock,Simon & Garfunkel,Sounds of Silence
+1966,Folk Rock,The Mamas & the Papas,If You Can Believe Your Eyes and Ears
+1966,Psychedelic Rock,The 13th Floor Elevators,The Psychedelic Sounds of the 13th Floor Elevators
+1966,Soul,Four Tops,Reach Out
+1966,Soul,Wilson Pickett,The Exciting Wilson Pickett
+1966,Rock and Roll,The Beatles,Revolver
+1966,Jazz,Joe Henderson,Inner Urge
+1966,Rock and Roll,The Rolling Stones,Aftermath
+1966,Rock and Roll,Bob Dylan,Blonde on Blonde
+1967,Soul,Aretha Franklin,I Never Loved a Man the Way I Love You
+1967,Psychedelic Rock,The Jimi Hendrix Experience,Are You Experienced
+1967,Pop,The Beatles,Sgt. Pepper's Lonely Hearts Club Band
+1967,Rock and Roll,The Velvet Underground,The Velvet Underground & Nico
+1967,Psychedelic Rock,The Doors,The Doors
+1967,Psychedelic Rock,Jefferson Airplane,Surrealistic Pillow
+1967,Psychedelic Rock,Pink Floyd,The Piper at the Gates of Dawn
+1967,Psychedelic Rock,Cream,Disraeli Gears
+1967,Psychedelic Rock,Love,Forever Changes
+1967,Soul,Sam & Dave,Soul Men
+1967,Rock and Roll,The Who,The Who Sell Out
+1967,Rock and Roll,Buffalo Springfield,Buffalo Springfield Again
+1967,European Folk,The Dubliners,A Drop of the Hard Stuff
+1967,Rocksteady,The Paragons,On the Beach
+1967,Rocksteady,Alton Ellis,Mr. Soul of Jamaica
+1968,Country,Johnny Cash,At Folsom Prison
+1968,Folk Rock,The Band,Music from Big Pink
+1968,Rock and Roll,The Velvet Underground,White Light/White Heat
+1968,Ska,Desmond Dekker,Israelites
+1968,Jazz,Chick Corea,Now He Sings Now He Sobs
+1968,Soul,Aretha Franklin,Lady Soul
+1968,Soul,Sly and the Family Stone,Dance to the Music
+1968,Rocksteady,Toots & the Maytals,Sweet and Dandy
+1968,Rock and Roll,The Beatles,The Beatles (White Album)
+1968,Rock and Roll,The Rolling Stones,Beggars Banquet
+1968,Rock and Roll,The Jimi Hendrix Experience,Electric Ladyland
+1968,Rock and Roll,The Zombies,Odessey and Oracle
+1968,Traditional Folk,Joni Mitchell,Song to a Seagull
+1968,Blues,Big Brother and the Holding Company,Cheap Thrills
+1968,Son Cubano,Arsenio Rodríguez,Primitivo
+1969,Progressive Rock,King Crimson,In the Court of the Crimson King
+1969,Rock and Roll,The Beatles,Abbey Road
+1969,Folk Revival,Fairport Convention,Liege & Lief
+1969,Funk,The Meters,The Meters
+1969,Progressive Rock,The Nice,The Nice
+1969,Jazz Fusion,Miles Davis,In a Silent Way
+1969,Folk Rock,The Band,The Band
+1969,Folk Rock,Crosby Stills & Nash,Crosby Stills & Nash
+1969,Soul,Isaac Hayes,Hot Buttered Soul
+1969,Soul,Dusty Springfield,Dusty in Memphis
+1969,Folk Rock,Neil Young,Everybody Knows This Is Nowhere
+1969,Rock and Roll,The Rolling Stones,Let It Bleed
+1969,Rock and Roll,The Who,Tommy
+1969,Rock and Roll,Led Zeppelin,Led Zeppelin
+1969,Rock and Roll,Led Zeppelin,Led Zeppelin II
+1969,Country,The Flying Burrito Brothers,The Gilded Palace of Sin
+1969,Soul,The Temptations,Cloud Nine
+1969,Rock and Roll,The Stooges,The Stooges
+1969,Rock and Roll,MC5,Kick Out the Jams
+1969,Rock and Roll,Creedence Clearwater Revival,Green River
+1970,Heavy Metal,Black Sabbath,Black Sabbath
+1970,Punk Rock,The Stooges,Fun House
+1970,Heavy Metal,Black Sabbath,Paranoid
+1970,Jazz Fusion,Miles Davis,Bitches Brew
+1970,Folk Rock,Simon & Garfunkel,Bridge Over Troubled Water
+1970,Folk Rock,Neil Young,After the Gold Rush
+1970,Soul,Curtis Mayfield,Curtis
+1970,Funk,James Brown,Sex Machine
+1970,Folk Rock,Grateful Dead,American Beauty
+1970,Pop,Carpenters,Close to You
+1970,Rock and Roll,George Harrison,All Things Must Pass
+1970,Blues,Derek and the Dominos,Layla and Other Assorted Love Songs
+1970,Rock and Roll,Van Morrison,Moondance
+1970,Rock and Roll,John Lennon,John Lennon/Plastic Ono Band
+1970,Indie Folk,James Taylor,Sweet Baby James
+1971,Heavy Metal,Led Zeppelin,Led Zeppelin IV
+1971,Funk,Sly & The Family Stone,There's a Riot Goin' On
+1971,Progressive Rock,Yes,Fragile
+1971,Folk Revival,Joni Mitchell,Blue
+1971,Jazz Fusion,Alice Coltrane,Journey in Satchidananda
+1971,Pop,Carole King,Tapestry
+1971,Jazz Fusion,Mahavishnu Orchestra,The Inner Mounting Flame
+1971,Glam Rock,T. Rex,Electric Warrior
+1971,Progressive Rock,Jethro Tull,Aqualung
+1971,Krautrock,Can,Tago Mago
+1971,Funk,Funkadelic,Maggot Brain
+1971,Soul,Donny Hathaway,Donny Hathaway Live
+1971,Rock and Roll,The Who,Who's Next
+1971,Rock and Roll,The Rolling Stones,Sticky Fingers
+1971,Progressive Rock,David Bowie,Hunky Dory
+1971,Indie Folk,Leonard Cohen,Songs of Love and Hate
+1971,Pop,Elton John,Madman Across the Water
+1971,Motown,Marvin Gaye,What's Going On
+1971,Chanson,Serge Gainsbourg,Histoire de Melody Nelson
+1972,Rock and Roll,The Rolling Stones,Exile on Main St.
+1972,Funk,Stevie Wonder,Superstition
+1972,Soul,Curtis Mayfield,Superfly
+1972,Reggae,Jimmy Cliff,The Harder They Come
+1972,Glam Rock,David Bowie,The Rise and Fall of Ziggy Stardust and the Spiders from Mars
+1972,Soul,Stevie Wonder,Talking Book
+1972,Jazz Fusion,Return to Forever,Return to Forever
+1972,Glam Rock,Lou Reed,Transformer
+1972,Krautrock,Neu!,Neu!
+1972,Soul,Al Green,Let's Stay Together
+1972,Progressive Rock,Genesis,Foxtrot
+1972,Progressive Rock,Yes,Close to the Edge
+1972,Hard Rock,Deep Purple,Machine Head
+1972,Traditional Folk,Nick Drake,Pink Moon
+1972,Jazz Fusion,Steely Dan,Can't Buy a Thrill
+1972,Progressive Rock,Roxy Music,Roxy Music
+1972,Pop,Todd Rundgren,Something/Anything?
+1972,Latin Pop,Milton Nascimento & Lô Borges,Clube da Esquina
+1973,Reggae,The Wailers,Catch a Fire
+1973,Jazz Fusion,Herbie Hancock,Head Hunters
+1973,Progressive Rock,Pink Floyd,The Dark Side of the Moon
+1973,Soul,Al Green,Call Me
+1973,Soul,Stevie Wonder,Innervisions
+1973,Progressive Rock,Genesis,Selling England by the Pound
+1973,Dub,Lee 'Scratch' Perry,Blackboard Jungle Dub
+1973,Ambient,Fripp & Eno,No Pussyfooting
+1973,Hard Rock,Led Zeppelin,Houses of the Holy
+1973,Punk Rock,Iggy and The Stooges,Raw Power
+1973,Soul,Marvin Gaye,Let's Get It On
+1973,Progressive Rock,King Crimson,Larks' Tongues in Aspic
+1973,Progressive Rock,Mike Oldfield,Tubular Bells
+1973,Reggae,Bob Marley & The Wailers,Burnin'
+1973,African Traditional,Ladysmith Black Mambazo,Amabutho
+1973,Flamenco,Paco de Lucía,Fuente y Caudal
+1973,Pop,Elton John,Goodbye Yellow Brick Road
+1973,Rock and Roll,The Who,Quadrophenia
+1973,Punk Rock,New York Dolls,New York Dolls
+1973,Rock and Roll,Paul McCartney & Wings,Band on the Run
+1973,European Folk,Planxty,Planxty
+1973,Waltz,Willi Boskovsky & Vienna Philharmonic,Strauss Waltzes
+1973,Cumbia,Andrés Landero,Cumbia en la India
+1973,Cumbia,Los Mirlos,Cumbia Amazónica
+1973,Outlaw Country,Waylon Jennings,Honky Tonk Heroes
+1974,Electronic Art Music,Kraftwerk,Autobahn
+1974,Punk Rock,Patti Smith,Hey Joe (Single)
+1974,Disco,George McCrae,Rock Your Baby
+1974,Progressive Rock,King Crimson,Red
+1974,Hard Rock,Queen,Sheer Heart Attack
+1974,Soul,Gil Scott-Heron,Winter in America
+1974,Progressive Rock,Genesis,The Lamb Lies Down on Broadway
+1974,Jazz Fusion,Steely Dan,Pretzel Logic
+1974,Progressive Rock,Brian Eno,Here Come the Warm Jets
+1974,Pop,Supertramp,Crime of the Century
+1974,Indie Folk,Joni Mitchell,Court and Spark
+1974,Pop,Big Star,Radio City
+1974,Rumba,Los Papines,Los Papines
+1975,Rock and Roll,Queen,A Night at the Opera
+1975,Jazz Fusion,Return to Forever,Romantic Warrior
+1975,Funk,"Earth, Wind & Fire",That's the Way of the World
+1975,Jazz,Keith Jarrett,The Köln Concert
+1975,Funk,Parliament,Mothership Connection
+1975,Folk Rock,Bob Dylan,Blood on the Tracks
+1975,Progressive Rock,Pink Floyd,Wish You Were Here
+1975,Hard Rock,Led Zeppelin,Physical Graffiti
+1975,Hard Rock,Aerosmith,Toys in the Attic
+1975,Afrobeat,Fela Kuti,Expensive Shit
+1975,Quiet Storm,Smokey Robinson,A Quiet Storm
+1975,Progressive Rock,Patti Smith,Horses
+1975,Rock and Roll,Bruce Springsteen,Born to Run
+1975,Progressive Rock,Brian Eno,Another Green World
+1975,Rock and Roll,Neil Young,Tonight's the Night
+1975,Progressive Rock,David Bowie,Young Americans
+1975,Hawaiian,Gabby Pahinui,"The Gabby Pahinui Hawaiian Band, Vol. 1"
+1975,Outlaw Country,Willie Nelson,Red Headed Stranger
+1976,Punk Rock,Ramones,Ramones
+1976,Afrobeat,Fela Kuti,Zombie
+1976,Pop,ABBA,Dancing Queen
+1976,Minimalism,Philip Glass,Einstein on the Beach
+1976,Minimalism,Steve Reich,Music for 18 Musicians
+1976,Electronic Art Music,Jean-Michel Jarre,Oxygène
+1976,Jazz Fusion,Jaco Pastorius,Jaco Pastorius
+1976,Progressive Rock,Rush,2112
+1976,Hard Rock,Boston,Boston
+1976,Pop,ABBA,Arrival
+1976,New Wave,Blondie,Blondie
+1976,Highlife,E.T. Mensah,King of Highlife
+1976,Outlaw Country,Waylon Jennings&Willie Nelson&Jessi Colter&Tompall Glaser,Wanted! The Outlaws
+1976,Progressive Rock,David Bowie,Station to Station
+1976,Jazz Fusion,Steely Dan,The Royal Scam
+1976,Rock and Roll,Eagles,Hotel California
+1976,Rock and Roll,Tom Petty and the Heartbreakers,Tom Petty and the Heartbreakers
+1976,Motown,Stevie Wonder,Songs in the Key of Life
+1976,Smooth Jazz,George Benson,Breezin'
+1976,Dub,King Tubby,King Tubby Meets Rockers Uptown
+1976,Dub,"Lee ""Scratch"" Perry & The Upsetters",Super Ape
+1977,Disco,Bee Gees,Saturday Night Fever
+1977,Electronic Art Music,Kraftwerk,Trans-Europe Express
 1977,Pop,Fleetwood Mac,Rumours
 1977,Disco,Donna Summer,I Feel Love
-1979,Synth-pop,Yellow Magic Orchestra,Solid State Survivor
-1983,Synth-pop,New Order,Blue Monday
-1998,IDM,Boards of Canada,Music Has the Right to Children
-1988,Gangsta Rap,N.W.A.,Straight Outta Compton
-1994,Hip Hop,The Notorious B.I.G.,Ready to Die
-2010,Hip Hop,Kanye West,My Beautiful Dark Twisted Fantasy
-2006,Neo Soul,Amy Winehouse,Back to Black
-1979,Punk Rock,The Clash,London Calling
-1982,Heavy Metal,Iron Maiden,The Number of the Beast
-1968,Country,Johnny Cash,At Folsom Prison
-1958,Bossa Nova,João Gilberto,Chega de Saudade
 1977,Reggae,Bob Marley & The Wailers,Exodus
-1992,K-Pop,Seo Taiji and Boys,Nan Arayo (I Know)
-2003,J-Pop,SMAP,Sekai ni Hitotsu Dake no Hana
-2016,Modern Pop,Beyoncé,Lemonade
-2019,Modern Pop,Billie Eilish,WHEN WE ALL FALL ASLEEP...
-2020,K-Pop,BTS,Dynamite
-1741,Baroque,J.S. Bach,Goldberg Variations
-1791,Classical,W.A. Mozart,Requiem
-1804,Classical,Beethoven,Symphony No. 3 'Eroica'
-1865,Opera,Richard Wagner,Tristan und Isolde
-1894,Modern Classical,Claude Debussy,Prélude à l'après-midi d'un faune
-1912,Avant-Garde Classical,Arnold Schoenberg,Pierrot Lunaire
-1976,Minimalism,Philip Glass,Einstein on the Beach
-1939,Jazz,Billie Holiday,Strange Fruit
-1956,Bebop,Sonny Rollins,Saxophone Colossus
-1959,Jazz,Charles Mingus,Mingus Ah Um
-1961,Cool Jazz,Bill Evans Trio,Sunday at the Village Vanguard
-1964,Free Jazz,Eric Dolphy,Out to Lunch!
-1975,Jazz Fusion,Return to Forever,Romantic Warrior
-1964,Soul,Sam Cooke,Ain't That Good News
-1971,Funk,Sly & The Family Stone,There's a Riot Goin' On
-1972,Soul,Curtis Mayfield,Superfly
-1973,Soul,Al Green,Call Me
-1975,Funk,"Earth, Wind & Fire",That's the Way of the World
-2012,Neo Soul,Frank Ocean,channel ORANGE
-1993,Alternative Hip Hop,A Tribe Called Quest,Midnight Marauders
-1998,Hip Hop,Outkast,Aquemini
-2001,Hip Hop,Jay-Z,The Blueprint
-2004,Hip Hop,Madvillain,Madvillainy
-1967,Rock and Roll,The Velvet Underground,The Velvet Underground & Nico
-1971,Progressive Rock,Yes,Fragile
 1977,Post-Punk,Television,Marquee Moon
+1977,City Pop,Taeko Onuki,Sunshower
+1977,Jazz Fusion,Weather Report,Heavy Weather
+1977,Punk Rock,The Damned,Damned Damned Damned
+1977,Disco,Giorgio Moroder,From Here to Eternity
+1977,Punk Rock,Sex Pistols,Never Mind the Bollocks Here's the Sex Pistols
+1977,New Wave,Talking Heads,Talking Heads: 77
+1977,Punk Rock,Iggy Pop,Lust for Life
+1977,Punk Rock,Richard Hell and the Voidoids,Blank Generation
+1977,Punk Rock,The Clash,The Clash
+1977,Progressive Rock,David Bowie,Low
+1977,Progressive Rock,David Bowie,Heroes
+1977,Jazz Fusion,Steely Dan,Aja
+1977,Electronica,Suicide,Suicide
+1977,Post-Punk,Iggy Pop,The Idiot
+1977,Rock and Roll,Meat Loaf,Bat Out of Hell
+1977,Progressive Rock,Brian Eno,Before and After Science
+1977,Pop,Electric Light Orchestra,Out of the Blue
+1977,Klezmer,The Klezmorim,East Side Wedding
+1978,Ambient,Brian Eno,Ambient 1: Music for Airports
+1978,Salsa,Willie Colón & Rubén Blades,Siembra
+1978,Reggae,Linton Kwesi Johnson,Dread Beat an' Blood
+1978,New Wave,Devo,Q: Are We Not Men? A: We Are Devo!
+1978,Post-Punk,Wire,Pink Flag
+1978,New Wave,Blondie,Parallel Lines
+1978,New Wave,The Cars,The Cars
+1978,New Wave,The Police,Outlandos d'Amour
+1978,Post-Punk,Public Image Ltd,First Issue
+1978,Funk,Funkadelic,One Nation Under a Groove
+1978,Hard Rock,Van Halen,Van Halen
+1978,Rock and Roll,Bruce Springsteen,Darkness on the Edge of Town
+1978,Pop,Kate Bush,The Kick Inside
+1978,Electronica,Yellow Magic Orchestra,Yellow Magic Orchestra
+1978,Electronica,Kraftwerk,The Man-Machine
+1978,Rock and Roll,Dire Straits,Dire Straits
+1979,Hip Hop,The Sugarhill Gang,Rapper's Delight
+1979,Post-Punk,Joy Division,Unknown Pleasures
+1979,Synth-pop,Yellow Magic Orchestra,Solid State Survivor
+1979,Punk Rock,The Clash,London Calling
+1979,Post-Punk,Wire,154
+1979,Pop,Michael Jackson,Off the Wall
+1979,Ska,The Specials,The Specials
+1979,New Wave,The Police,Reggatta de Blanc
+1979,Dancehall,Barrington Levy,Bounty Hunter
+1979,Disco,Chic,Risqué
+1979,New Wave,Talking Heads,Fear of Music
+1979,Post-Punk,Gang of Four,Entertainment!
+1979,Post-Punk,The Slits,Cut
+1979,Progressive Rock,Pink Floyd,The Wall
+1979,Synth-Pop,Gary Numan,The Pleasure Principle
+1979,Hard Rock,AC/DC,Highway to Hell
+1979,Post-Punk,The Cure,Three Imaginary Boys
+1979,Disco,Donna Summer,Bad Girls
+1979,Post-Punk,Public Image Ltd,Metal Box
+1979,New Wave,The B-52's,The B-52's
+1979,New Wave,XTC,Drums and Wires
+1979,Industrial,Throbbing Gristle,20 Jazz Funk Greats
+1979,Rock and Roll,Neil Young & Crazy Horse,Rust Never Sleeps
+1980,City Pop,Tatsuro Yamashita,Ride on Time
+1980,New Wave,Talking Heads,Remain in Light
 1980,Heavy Metal,Judas Priest,British Steel
+1980,Hard Rock,AC/DC,Back in Black
+1980,Post-Punk,Joy Division,Closer
+1980,Heavy Metal,Motorhead,Ace of Spades
+1980,Post-Punk,The Cure,Seventeen Seconds
+1980,Hardcore Punk,Dead Kennedys,Fresh Fruit for Rotting Vegetables
+1980,New Wave,Pretenders,Pretenders
+1980,Post-Punk,The Fall,Grotesque (After the Gramme)
+1980,Jazz,Pat Metheny Group,80/81
+1980,Progressive Rock,David Bowie,Scary Monsters (and Super Creeps)
+1980,New Wave,The Jam,Sound Affects
+1980,Smooth Jazz,Grover Washington Jr.,Winelight
+1981,Hardcore Punk,Black Flag,Damaged
+1981,Electronic Art Music,Kraftwerk,Computer World
+1981,Funk,Rick James,Street Songs
+1981,Synth-pop,Yellow Magic Orchestra,BGM
+1981,City Pop,Akira Terao,Reflections
+1981,Synth-Pop,The Human League,Dare
+1981,Progressive Rock,Rush,Moving Pictures
+1981,New Wave,The Police,Ghost in the Machine
+1981,Post-Punk,New Order,Movement
+1981,Progressive Rock,King Crimson,Discipline
+1981,Heavy Metal,Venom,Welcome to Hell
+1981,Quiet Storm,Luther Vandross,Never Too Much
+1982,Pop,Michael Jackson,Thriller
+1982,Heavy Metal,Iron Maiden,The Number of the Beast
+1982,Hardcore Punk,Bad Brains,Bad Brains
+1982,Afrobeat,King Sunny Adé,Juju Music
+1982,Dancehall,Yellowman,Mister Yellowman
+1982,Pop,Prince,1999
+1982,Punk Rock,The Clash,Combat Rock
+1982,New Wave,Duran Duran,Rio
+1982,Hip Hop,Grandmaster Flash and the Furious Five,The Message
+1982,Punk Rock,Descendents,Milo Goes to College
+1982,Synth-Pop,Depeche Mode,A Broken Frame
+1982,Goth Rock,Bauhaus,The Sky's Gone Out
+1982,Pop,Roxy Music,Avalon
+1982,Goth Rock,The Cure,Pornography
+1982,Rock and Roll,Bruce Springsteen,Nebraska
+1982,Pop,Kate Bush,The Dreaming
+1982,Punk Rock,Misfits,Walk Among Us
+1983,Synth-pop,Eurythmics,Sweet Dreams (Are Made of This)
+1983,Synth-pop,New Order,Blue Monday
+1983,Alternative Rock,R.E.M.,Murmur
+1983,Post-Punk,U2,War
+1983,Synth-Pop,New Order,Power Corruption & Lies
+1983,New Wave,The Police,Synchronicity
+1983,Thrash Metal,Metallica,Kill 'Em All
+1983,Heavy Metal,Def Leppard,Pyromania
+1983,Pop,Cyndi Lauper,She's So Unusual
+1983,New Wave,Tears for Fears,The Hurting
+1983,Heavy Metal,Dio,Holy Diver
+1983,Post-Punk,The Chameleons,Script of the Bridge
+1983,Punk Rock,Violent Femmes,Violent Femmes
+1983,Thrash Metal,Suicidal Tendencies,Suicidal Tendencies
+1983,Post-Punk,Sonic Youth,Confusion Is Sex
+1983,Electro,Cybotron,Enter
+1984,Pop,Madonna,Like a Virgin
+1984,Salsa,Rubén Blades,Buscando América
+1984,City Pop,Mariya Takeuchi,Variety
+1984,Ambient,Steve Roach,Structures from Silence
+1984,Pop,Prince and the Revolution,Purple Rain
+1984,Indie Pop,The Smiths,The Smiths
+1984,Alternative Rock,The Replacements,Let It Be
+1984,Punk Rock,Minutemen,Double Nickels on the Dime
+1984,Alternative Rock,Husker Du,Zen Arcade
+1984,Heavy Metal,Iron Maiden,Powerslave
+1984,Dream Pop,Cocteau Twins,Treasure
+1984,Hip Hop,Run-D.M.C.,Run-D.M.C.
+1984,Hard Rock,Van Halen,1984
+1984,Synth-Pop,Depeche Mode,Some Great Reward
+1984,Post-Punk,Echo & the Bunnymen,Ocean Rain
+1984,Thrash Metal,Metallica,Ride the Lightning
+1984,Rock and Roll,Bruce Springsteen,Born in the U.S.A.
+1984,Pop,Sade,Diamond Life
+1984,Goth Rock,The Sisters of Mercy,First and Last and Always
+1984,Highlife,Chief Stephen Osita Osadebe,Osondi Owendi
+1985,Techno,Model 500,No UFO's
+1985,Dancehall,Wayne Smith,Under Mi Sleng Teng
+1985,Alternative Rock,The Replacements,Tim
+1985,Pop,Kate Bush,Hounds of Love
+1985,Synth-Pop,Tears for Fears,Songs from the Big Chair
+1985,Hip Hop,LL Cool J,Radio
+1985,Thrash Metal,Megadeth,Killing Is My Business... and Business Is Good!
+1985,Pop,Whitney Houston,Whitney Houston
+1985,Synth-Pop,a-ha,Hunting High and Low
+1985,Synth-Pop,New Order,Low-Life
+1985,Jazz,Wynton Marsalis,Black Codes (From the Underground)
+1985,Alternative Rock,Tom Waits,Rain Dogs
+1985,Indie Pop,The Jesus and Mary Chain,Psychocandy
+1985,Pop,Dire Straits,Brothers in Arms
+1985,Quiet Storm,Sade,Promise
+1986,House,Frankie Knuckles,Your Love
+1986,Thrash Metal,Metallica,Master of Puppets
 1986,Thrash Metal,Slayer,Reign in Blood
 1986,Indie Rock,The Smiths,The Queen Is Dead
-1988,Indie Rock,Sonic Youth,Daydream Nation
-1989,Indie Rock,The Stone Roses,The Stone Roses
-1997,Post-Punk,Godspeed You! Black Emperor,F# A# ∞
-2000,Alternative Rock,Radiohead,Kid A
-2004,Indie Rock,Arcade Fire,Funeral
-1981,Electronic Art Music,Kraftwerk,Computer World
-1988,Techno,Inner City,Big Fun
-1989,House,808 State,Pacific State
-1991,Electronic Art Music,Massive Attack,Blue Lines
-1996,Electronic Art Music,DJ Shadow,Endtroducing.....
-1997,House,Daft Punk,Homework
-2010,IDM,Flying Lotus,Cosmogramma
-1955,Salsa,Celia Cruz,Canta Celia Cruz
-1972,Reggae,Jimmy Cliff,The Harder They Come
-1978,Reggae,Linton Kwesi Johnson,Dread Beat an' Blood
-1984,Salsa,Rubén Blades,Buscando América
-1977,City Pop,Taeko Onuki,Sunshower
-1984,City Pop,Mariya Takeuchi,Variety
-1997,J-Pop,Namie Amuro,Concentration 20
-1998,J-Pop,MISIA,Mother Father Brother Sister
-1689,Opera,Henry Purcell,Dido and Aeneas
-1742,Baroque,George Frideric Handel,Messiah
-1827,Romantic,Franz Schubert,Winterreise
-1888,Romantic,Gustav Mahler,Symphony No. 1
-1914,Modern Classical,Gustav Holst,The Planets
-1941,Avant-Garde Classical,Olivier Messiaen,Quartet for the End of Time
-1976,Minimalism,Steve Reich,Music for 18 Musicians
-1927,Country,The Carter Family,Bristol Sessions
-1939,Traditional Folk,Lead Belly,The Midnight Special
-1940,Traditional Folk,Woody Guthrie,Dust Bowl Ballads
-1965,Electric Blues,B.B. King,Live at the Regal
-1968,Folk Rock,The Band,Music from Big Pink
-1969,Folk Revival,Fairport Convention,Liege & Lief
-1971,Folk Revival,Joni Mitchell,Blue
-1925,New Orleans Jazz,Louis Armstrong,Hot Fives & Sevens
-1947,Bebop,Thelonious Monk,Genius of Modern Music
-1953,Bebop,Charlie Parker & Dizzy Gillespie,Jazz at Massey Hall
-1954,Cool Jazz,Chet Baker,Chet Baker Sings
-1958,Bebop,Art Blakey and the Jazz Messengers,Moanin'
-1960,Jazz,John Coltrane,Giant Steps
-1963,Jazz,Charles Mingus,The Black Saint and the Sinner Lady
-1964,Free Jazz,Albert Ayler,Spiritual Unity
-1966,Jazz,Wayne Shorter,Speak No Evil
-1971,Jazz Fusion,Alice Coltrane,Journey in Satchidananda
-1975,Jazz,Keith Jarrett,The Köln Concert
-1977,Jazz Fusion,Weather Report,Heavy Weather
-1963,Soul,James Brown,Live at the Apollo
-1965,Soul,Otis Redding,Otis Blue
-1969,Funk,The Meters,The Meters
-1973,Soul,Stevie Wonder,Innervisions
-1975,Funk,Parliament,Mothership Connection
-1981,Funk,Rick James,Street Songs
 1986,R&B,Janet Jackson,Control
-1987,R&B,Prince,Sign o' the Times
-1995,Neo Soul,D'Angelo,Brown Sugar
-1999,R&B,TLC,FanMail
-1989,Alternative Hip Hop,De La Soul,3 Feet High and Rising
-1992,Hip Hop,Dr. Dre,The Chronic
-1993,Gangsta Rap,Snoop Doggy Dogg,Doggystyle
-1999,Hip Hop,MF DOOM,Operation: Doomsday
-2012,Hip Hop,Kendrick Lamar,"good kid, m.A.A.d city"
-2015,Trap,Future,DS2
-2018,Trap,Travis Scott,ASTROWORLD
-2019,Hip Hop,"Tyler, the Creator",IGOR
-1965,Rock and Roll,The Who,My Generation
-1967,Psychedelic Rock,The Doors,The Doors
-1968,Rock and Roll,The Velvet Underground,White Light/White Heat
-1970,Punk Rock,The Stooges,Fun House
-1973,Progressive Rock,Genesis,Selling England by the Pound
-1977,Punk Rock,The Damned,Damned Damned Damned
-1979,Post-Punk,Wire,154
-1982,Hardcore Punk,Bad Brains,Bad Brains
-1985,Alternative Rock,The Replacements,Tim
 1986,Heavy Metal,Megadeth,Peace Sells... but Who's Buying?
+1986,Hip Hop,Run-D.M.C.,Raising Hell
+1986,Hip Hop,Beastie Boys,Licensed to Ill
+1986,Hardcore Punk,Bad Brains,I Against I
+1986,Pop,Madonna,True Blue
+1986,Alternative Rock,R.E.M.,Lifes Rich Pageant
+1986,Synth-Pop,New Order,Brotherhood
+1986,Pop,Peter Gabriel,So
+1986,African Traditional,Paul Simon,Graceland
+1986,Pop,Talk Talk,The Colour of Spring
+1986,Pop,XTC,Skylarking
+1986,Tango,Astor Piazzolla,Tango: Zero Hour
+1986,Highlife,E.T. Mensah,All for You
+1986,Electro,Afrika Bambaataa & The Soulsonic Force,Planet Rock: The Album
+1987,Hardcore Punk,Fugazi,13 Songs
+1987,R&B,Prince,Sign o' the Times
+1987,Pop,Michael Jackson,Bad
+1987,Alternative Rock,The Cure,Kiss Me Kiss Me Kiss Me
+1987,Hip Hop,Eric B. & Rakim,Paid in Full
+1987,Alternative Rock,Dinosaur Jr.,You're Living All Over Me
+1987,Hard Rock,Def Leppard,Hysteria
+1987,Pop,George Michael,Faith
+1987,Hip Hop,Boogie Down Productions,Criminal Minded
+1987,Alternative Rock,Husker Du,Warehouse: Songs and Stories
+1987,Acid House,Phuture,Acid Tracks
+1987,Rock and Roll,Guns N' Roses,Appetite for Destruction
+1987,Rock and Roll,U2,The Joshua Tree
+1988,Gangsta Rap,N.W.A.,Straight Outta Compton
+1988,Indie Rock,Sonic Youth,Daydream Nation
+1988,Techno,Inner City,Big Fun
+1988,Celtic Folk,Enya,Watermark
+1988,Grunge,Mudhoney,Superfuzz Bigmuff
+1988,Hip Hop,Public Enemy,It Takes a Nation of Millions to Hold Us Back
+1988,Shoegaze,My Bloody Valentine,Isn't Anything
+1988,Thrash Metal,Metallica,...And Justice for All
+1988,Alternative Rock,Jane's Addiction,Nothing's Shocking
+1988,Post-Rock,Talk Talk,Spirit of Eden
+1988,Hip Hop,Slick Rick,The Great Adventures of Slick Rick
+1988,Heavy Metal,Danzig,Danzig
+1988,Heavy Metal,Iron Maiden,Seventh Son of a Seventh Son
+1988,Hip Hop,Big Daddy Kane,Long Live the Kane
+1988,Deep House,Mr. Fingers,Amnesia
+1988,Traditional Folk,Tracy Chapman,Tracy Chapman
+1988,Heavy Metal,Living Colour,Vivid
+1988,New Jack Swing,Guy,Guy
+1988,New Jack Swing,Bobby Brown,Don't Be Cruel
+1989,New Jack Swing,Janet Jackson,Rhythm Nation 1814
+1989,Indie Rock,The Stone Roses,The Stone Roses
+1989,House,808 State,Pacific State
+1989,Alternative Hip Hop,De La Soul,3 Feet High and Rising
 1989,Post-Punk,The Cure,Disintegration
 1989,Indie Rock,Pixies,Doolittle
-1991,Post-Punk,Slint,Spiderland
+1989,Hip Hop,Beastie Boys,Paul's Boutique
+1989,Grunge,Nirvana,Bleach
+1989,Pop,Madonna,Like a Prayer
+1989,Hard Rock,Aerosmith,Pump
+1989,Death Metal,Morbid Angel,Altars of Madness
+1989,House,Technotronic,Pump Up the Jam
+1989,Acid House,808 State,Quadrastate
+1989,New Wave,The B-52's,Cosmic Thing
+1989,Gamelan,Gamelan Semar Pegulingan,Gamelan of Bali
+1989,Cumbia,La Sonora Dinamita,16 Grandes Exitos
+1989,Mento,The Jolly Boys,Pop 'n' Mento
+1989,Baile Funk,DJ Marlboro,Funk Brasil
+1989,Industrial,Nine Inch Nails,Pretty Hate Machine
+1989,Heavy Metal,Faith No More,The Real Thing
+1990,Synth-pop,Depeche Mode,Violator
+1990,Shoegaze,Ride,Nowhere
+1990,Reggaeton,Vico C,La Recta Final
+1990,Dream Pop,Cocteau Twins,Heaven or Las Vegas
+1990,Hip Hop,Public Enemy,Fear of a Black Planet
+1990,Thrash Metal,Megadeth,Rust in Peace
+1990,Alternative Rock,Sonic Youth,Goo
+1990,Hip Hop,A Tribe Called Quest,People's Instinctive Travels and the Paths of Rhythm
+1990,Alternative Rock,Pixies,Bossanova
+1990,Grunge,Alice in Chains,Facelift
+1990,Jazz,Branford Marsalis Quartet,Crazy People Music
+1990,Heavy Metal,Pantera,Cowboys from Hell
+1990,Merengue,Juan Luis Guerra 4.40,Bachata Rosa
+1990,Musette,Gus Viseur,Les As Du Musette
+1990,Eurodance,Snap!,World Power
+1990,Post-Hardcore,Fugazi,Repeater
+1991,Grunge,Nirvana,Nevermind
+1991,Grunge,Pearl Jam,Ten
+1991,Shoegaze,My Bloody Valentine,Loveless
+1991,Electronic Art Music,Massive Attack,Blue Lines
+1991,Techno,LFO,Frequencies
+1991,Heavy Metal,Metallica,Metallica
+1991,Alternative Rock,Red Hot Chili Peppers,Blood Sugar Sex Magik
+1991,Grunge,Soundgarden,Badmotorfinger
+1991,Alternative Rock,U2,Achtung Baby
+1991,Death Metal,Death,Human
+1991,Alternative Rock,Primal Scream,Screamadelica
+1991,Tango,Carlos Gardel,El Rey del Tango
+1991,Boom Bap,A Tribe Called Quest,The Low End Theory
+1991,Math Rock,Slint,Spiderland
+1992,IDM,Aphex Twin,Selected Ambient Works 85-92
+1992,K-Pop,Seo Taiji and Boys,Nan Arayo (I Know)
 1992,Indie Rock,Pavement,Slanted and Enchanted
+1992,Ambient,The Orb,U.F.Orb
+1992,Dancehall,Buju Banton,Mr. Mention
+1992,Grunge,Alice in Chains,Dirt
+1992,Alternative Rock,R.E.M.,Automatic for the People
+1992,Alternative Hip Hop,Beastie Boys,Check Your Head
+1992,Alternative Rock,The Cure,Wish
+1992,Merengue,Juan Luis Guerra 4.40,Areíto
+1992,Rumba,Los Muñequitos de Matanzas,Rumba Caliente
+1992,Heavy Metal,Rage Against the Machine,Rage Against the Machine
+1992,Heavy Metal,Pantera,Vulgar Display of Power
+1992,G-Funk,Dr. Dre,The Chronic
+1992,Klezmer,The Klezmatics,Rhythm + Jews
+1993,Alternative Hip Hop,A Tribe Called Quest,Midnight Marauders
+1993,Gangsta Rap,Snoop Doggy Dogg,Doggystyle
+1993,Techno,Jeff Mills,Waveform Transmission Vol. 1
+1993,Shoegaze,Slowdive,Souvlaki
+1993,Alternative Rock,The Smashing Pumpkins,Siamese Dream
+1993,Grunge,Nirvana,In Utero
+1993,Britpop,Blur,Modern Life Is Rubbish
+1993,Indie Rock,The Breeders,Last Splash
+1993,R&B,Janet Jackson,janet.
+1993,Musette,Marcel Azzola,L'Accordéon
+1993,Eurodance,Haddaway,The Album
+1993,Hardcore Techno,Various Artists,Thunderdome I
+1993,Pop,Bjork,Debut
+1993,Heavy Metal,Tool,Undertow
+1993,March,The Band of HM Royal Marines,Alford Marches
+1993,Hawaiian,Israel Kamakawiwo'ole,Facing Future
+1993,Boom Bap,Wu-Tang Clan,Enter the Wu-Tang (36 Chambers)
+1994,Nu Metal,Korn,Korn
+1994,Trance,Paul van Dyk,For an Angel
+1994,Hip Hop,The Notorious B.I.G.,Ready to Die
 1994,Alternative Rock,Oasis,Definitely Maybe
+1994,Grunge,Soundgarden,Superunknown
+1994,Pop Punk,Green Day,Dookie
+1994,Alternative Rock,Weezer,Weezer
+1994,Alternative Rock,Jeff Buckley,Grace
+1994,Britpop,Blur,Parklife
+1994,Indie Rock,Pavement,Crooked Rain Crooked Rain
+1994,R&B,TLC,CrazySexyCool
+1994,Electronica,Aphex Twin,Selected Ambient Works Volume II
+1994,Industrial,Nine Inch Nails,The Downward Spiral
+1994,Boom Bap,Nas,Illmatic
+1994,Waltz,André Rieu,Strauss & Co
+1994,G-Funk,Warren G,Regulate... G Funk Era
+1995,Neo Soul,D'Angelo,Brown Sugar
+1995,IDM,Autechre,Tri Repetae
+1995,Trip Hop,Portishead,Dummy
+1995,Alternative Rock,The Smashing Pumpkins,Mellon Collie and the Infinite Sadness
+1995,Britpop,Oasis,(What's the Story) Morning Glory?
+1995,Britpop,Pulp,Different Class
+1995,Alternative Rock,Radiohead,The Bends
+1995,Trip Hop,Tricky,Maxinquaye
+1995,Hip Hop,GZA,Liquid Swords
+1995,Hip Hop,Mobb Deep,The Infamous
+1995,Hip Hop,2Pac,Me Against the World
+1995,Pop,Alanis Morissette,Jagged Little Pill
+1995,Musette,Tony Murena,L'Âge d'Or de l'Accordéon
+1995,Latin Jazz,Poncho Sanchez,Conga Blue
+1995,Eurodance,Real McCoy,Another Night
+1995,Southern Hip Hop,Goodie Mob,Soul Food
+1995,Jungle,Goldie,Timeless
+1996,Hip Hop,2Pac,All Eyez on Me
+1996,Electronic Art Music,DJ Shadow,Endtroducing.....
+1996,Alternative Rock,Beck,Odelay
+1996,Britpop,Manic Street Preachers,Everything Must Go
+1996,Hip Hop,JAY-Z,Reasonable Doubt
+1996,Hip Hop,OutKast,ATLiens
+1996,Post-Rock,Tortoise,Millions Now Living Will Never Die
+1996,Indie Pop,Belle and Sebastian,If You're Feeling Sinister
+1996,Alternative Rock,Weezer,Pinkerton
+1996,Jazz,Brad Mehldau,The Art of the Trio Volume One
+1996,Heavy Metal,Tool,Ænima
+1996,Southern Hip Hop,UGK,Ridin' Dirty
+1996,Drum and Bass,LTJ Bukem,Logical Progression
+1997,Neo Soul,Erykah Badu,Baduizm
+1997,Alternative Rock,Radiohead,OK Computer
+1997,Post-Punk,Godspeed You! Black Emperor,F# A# ∞
+1997,House,Daft Punk,Homework
+1997,J-Pop,Namie Amuro,Concentration 20
+1997,Jungle,Roni Size / Reprazent,New Forms
+1997,Samba,Buena Vista Social Club,Buena Vista Social Club
+1997,Dancehall,Beenie Man,Many Moods of Moses
+1997,Hip Hop,The Notorious B.I.G.,Life After Death
+1997,Indie Rock,Modest Mouse,The Lonesome Crowded West
+1997,Indie Rock,Yo La Tengo,I Can Hear the Heart Beating as One
+1997,Pop,Bjork,Homogenic
+1997,Psychedelic Rock,Spiritualized,Ladies and Gentlemen We Are Floating in Space
+1997,Indie Folk,Elliott Smith,Either/Or
+1997,Big Beat,The Prodigy,The Fat of the Land
+1997,Spirituals,Paul Robeson,Songs of Free Men
+1997,Son Cubano,Sierra Maestra,Tíbiri Tábara
+1997,Big Beat,The Chemical Brothers,Dig Your Own Hole
+1997,Jungle,Aphrodite,Aphrodite
+1998,Neo Soul,Lauryn Hill,The Miseducation of Lauryn Hill
+1998,IDM,Boards of Canada,Music Has the Right to Children
+1998,J-Pop,MISIA,Mother Father Brother Sister
+1998,Trance,Paul Oakenfold,Tranceport
+1998,Trip Hop,Massive Attack,Mezzanine
+1998,French Touch,Air,Moon Safari
+1998,Indie Folk,Neutral Milk Hotel,In the Aeroplane Over the Sea
+1998,Pop,Madonna,Ray of Light
+1998,Nu Metal,Korn,Follow the Leader
+1998,Mariachi,Mariachi Vargas de Tecalitlán,Sones de Jalisco
+1998,Americana,Lucinda Williams,Car Wheels on a Gravel Road
+1998,Heavy Metal,System of a Down,System of a Down
+1998,Southern Hip Hop,OutKast,Aquemini
+1998,Mariachi,Pepe Aguilar,Por Mujeres Como Tú
+1998,Polka,Jimmy Sturr,I Remember...
+1998,Merengue,Elvis Crespo,Suavemente
+1998,Deep House,Kerri Chandler,"A Basement, A Red Light & A Feelin'"
+1998,Big Beat,Fatboy Slim,"You've Come a Long Way, Baby"
+1998,Drum and Bass,Ed Rush & Optical,Wormhole
+1999,Emo,American Football,American Football
+1999,J-Pop,Hikaru Utada,First Love
+1999,R&B,TLC,FanMail
+1999,Hip Hop,MF DOOM,Operation: Doomsday
+1999,K-Pop,H.O.T.,I Yah!
+1999,UK Garage,Artful Dodger,It's All About the Stragglers
+1999,Post-Rock,Sigur Ros,Agaetis byrjun
+1999,Hip Hop,The Roots,Things Fall Apart
+1999,Hip Hop,Mos Def,Black on Both Sides
+1999,Alternative Rock,Red Hot Chili Peppers,Californication
+1999,Pop Punk,Blink-182,Enema of the State
+1999,Indie Rock,The Flaming Lips,The Soft Bulletin
+1999,Indie Rock,Built to Spill,Keep It Like a Secret
+1999,Nu Metal,Slipknot,Slipknot
+1999,Electronica,Moby,Play
+2000,Neo Soul,D'Angelo,Voodoo
+2000,Hip Hop,Eminem,The Marshall Mathers LP
+2000,Alternative Rock,Radiohead,Kid A
 2000,Nu Metal,Linkin Park,Hybrid Theory
+2000,UK Garage,Craig David,Born to Do It
+2000,Post-Rock,Godspeed You! Black Emperor,Lift Your Skinny Fists Like Antennas to Heaven
+2000,Hip Hop,OutKast,Stankonia
+2000,Hip Hop,Ghostface Killah,Supreme Clientele
+2000,Pop,Coldplay,Parachutes
+2000,Heavy Metal,Deftones,White Pony
+2000,Alternative Rock,Queens of the Stone Age,Rated R
+2000,Electronic Art Music,The Avalanches,Since I Left You
+2000,Math Rock,Don Caballero,American Don
+2000,Post-Hardcore,At the Drive-In,Relationship of Command
+2000,Hardcore Techno,Neophyte,Hardcore
+2001,Indie Rock,The Strokes,Is This It
+2001,House,Daft Punk,Discovery
+2001,IDM,Aphex Twin,Drukqs
+2001,Hip Hop,Jay-Z,The Blueprint
 2001,Emo,Jimmy Eat World,Bleed American
 2001,Alternative Rock,System of a Down,Toxicity
 2001,Progressive Rock,Tool,Lateralus
-2006,Indie Rock,Arctic Monkeys,Whatever People Say I Am...
-1976,Electronic Art Music,Jean-Michel Jarre,Oxygène
-1977,Disco,Giorgio Moroder,From Here to Eternity
-1981,Synth-pop,Yellow Magic Orchestra,BGM
-1988,House,Larry Heard,Amnesia
-1990,Synth-pop,Depeche Mode,Violator
-1991,Techno,LFO,Frequencies
-1992,Ambient,The Orb,U.F.Orb
-1993,Techno,Jeff Mills,Waveform Transmission Vol. 1
-1995,IDM,Autechre,Tri Repetae
-1997,Drum and Bass,Roni Size / Reprazent,New Forms
-1998,Trance,Paul Oakenfold,Tranceport
-2002,IDM,Boards of Canada,Geogaddi
-2006,Dubstep,Skream,Skream!
-2007,House,Justice,† (Cross)
-2012,EDM,Zedd,Clarity
-2015,Vaporwave,2814,新しい日の誕生 (Birth of a New Day)
-1958,Salsa,Tito Puente,Dance Mania
-1973,Dub,Lee 'Scratch' Perry,Blackboard Jungle Dub
-1982,Afrobeat,King Sunny Adé,Juju Music
-1997,Samba,Buena Vista Social Club,Buena Vista Social Club
-1997,Dancehall,Beenie Man,Many Moods of Moses
-2017,Reggaeton,Luis Fonsi,Despacito
-2021,Amapiano,DJ Maphorisa & Tyler ICU,Banyana
-1971,Pop,Carole King,Tapestry
-1979,Pop,Michael Jackson,Off the Wall
-1981,City Pop,Akira Terao,Reflections
-1985,Pop,Kate Bush,Hounds of Love
-1999,K-Pop,H.O.T.,I Yah!
 2001,J-Pop,Ayumi Hamasaki,A Best
-2005,Lo-Fi Hip Hop,Nujabes,Modal Soul
-2006,K-Pop,BIGBANG,BIGBANG Vol.1
-2012,Synthwave,Carpenter Brut,EP I
-2018,Hyperpop,SOPHIE,Oil of Every Pearl's Un-Insides
-1151,Medieval,Hildegard von Bingen,Ordo Virtutum
-1198,Medieval,Pérotin,Viderunt omnes
-1364,Medieval,Guillaume de Machaut,Messe de Nostre Dame
-1570,Renaissance,Thomas Tallis,Spem in alium
-1949,Bluegrass,Flatt & Scruggs,Foggy Mountain Breakdown
-1959,Traditional Folk,Shirley Collins,Sweet England
-1960,Bluegrass,The Stanley Brothers,Rank Stranger
-1962,Celtic Folk,The Dubliners,The Dubliners
-1988,Celtic Folk,Enya,Watermark
-1948,Calypso,Lord Kitchener,London Is the Place for Me
-1968,Ska,Desmond Dekker,Israelites
-1979,Ska,The Specials,The Specials
-1982,Dancehall,Yellowman,Mister Yellowman
-1992,Dancehall,Buju Banton,Mr. Mention
-2016,Amapiano,MFR Souls,Amapiano Volume 1
-2022,Reggaeton,Bad Bunny,Un Verano Sin Ti
-2023,Amapiano,Tyla,Water
-1990,Shoegaze,Ride,Nowhere
-1993,Shoegaze,Slowdive,Souvlaki
-1958,Electronic Art Music,Edgard Varèse,Poème électronique
-1984,Ambient,Steve Roach,Structures from Silence
+2001,Indie Folk,The Microphones,The Glow Pt. 2
+2001,Post-Hardcore,Fugazi,The Argument
+2001,Alternative Hip Hop,Gorillaz,Gorillaz
+2001,Hip Hop,Missy Elliott,Miss E... So Addictive
+2001,Pop,Bjork,Vespertine
+2001,Indie Rock,The White Stripes,White Blood Cells
+2001,Electronica,Fennesz,Endless Summer
+2001,Gypsy Jazz,Biréli Lagrène,Gypsy Project
+2001,Metalcore,Converge,Jane Doe
+2001,Americana,Gillian Welch,Time (The Revelator)
+2002,IDM,Boards of Canada,Geogaddi
 2002,Ambient,William Basinski,The Disintegration Loops
+2002,Indie Rock,Wilco,Yankee Hotel Foxtrot
+2002,Hip Hop,Eminem,The Eminem Show
+2002,Post-Rock,Sigur Ros,()
+2002,Country,Johnny Cash,American IV: The Man Comes Around
+2002,Hip Hop,The Roots,Phrenology
+2002,Pop,Justin Timberlake,Justified
+2002,Post-Punk,Interpol,Turn On the Bright Lights
+2002,Alternative Rock,Queens of the Stone Age,Songs for the Deaf
+2002,Pop,Coldplay,A Rush of Blood to the Head
+2002,Indie Folk,Beck,Sea Change
+2002,Metalcore,Killswitch Engage,Alive or Just Breathing
+2003,Trap,T.I.,Trap Muzik
+2003,J-Pop,SMAP,Sekai ni Hitotsu Dake no Hana
+2003,Hip Hop,OutKast,Speakerboxxx/The Love Below
+2003,Hip Hop,50 Cent,Get Rich or Die Tryin'
+2003,Hip Hop,JAY-Z,The Black Album
+2003,Grime,Dizzee Rascal,Boy in da Corner
+2003,Indie Pop,The Postal Service,Give Up
+2003,Indie Folk,Sufjan Stevens,Michigan
+2003,Alternative Rock,Muse,Absolution
+2003,Jazz,The Bad Plus,These Are the Vistas
+2003,Indie Rock,The White Stripes,Elephant
+2003,Indie Rock,Yeah Yeah Yeahs,Fever to Tell
+2003,Heavy Metal,Evanescence,Fallen
+2003,Gamelan,Gamelan Çudamani,Odalan Bali
+2004,Reggaeton,Daddy Yankee,Barrio Fino
+2004,Hip Hop,Madvillain,Madvillainy
+2004,Indie Rock,Arcade Fire,Funeral
+2004,Hip Hop,Kanye West,The College Dropout
+2004,Pop Punk,Green Day,American Idiot
+2004,Indie Rock,Modest Mouse,Good News for People Who Love Bad News
+2004,R&B,Usher,Confessions
+2004,Pop,Brian Wilson,Smile
+2004,Emo,My Chemical Romance,Three Cheers for Sweet Revenge
+2004,Hip Hop,MF DOOM,Mm..Food
+2004,Post-Punk,Franz Ferdinand,Franz Ferdinand
+2004,New Wave,The Killers,Hot Fuss
+2005,Lo-Fi Hip Hop,Nujabes,Modal Soul
+2005,Synthwave,Kavinsky,Testarossa Autodrive
+2005,Indie Folk,Sufjan Stevens,Illinois
+2005,Alternative Hip Hop,Gorillaz,Demon Days
+2005,Hip Hop,Common,Be
+2005,Indie Pop,The New Pornographers,Twin Cinema
+2005,Alternative Rock,The White Stripes,Get Behind Me Satan
+2005,Post-Rock,Sigur Ros,Takk...
+2005,Post-Punk,LCD Soundsystem,LCD Soundsystem
+2005,Pop,Antony and the Johnsons,I Am a Bird Now
+2005,Pop,Fiona Apple,Extraordinary Machine
+2005,Drum and Bass,Pendulum,Hold Your Colour
+2006,Lo-Fi Hip Hop,J Dilla,Donuts
+2006,Neo Soul,Amy Winehouse,Back to Black
+2006,Dubstep,Skream,Skream!
+2006,K-Pop,BIGBANG,BIGBANG Vol.1
+2006,Indie Rock,Arctic Monkeys,Whatever People Say I Am That's What I'm Not
+2006,Pop,Justin Timberlake,FutureSex/LoveSounds
+2006,Emo,My Chemical Romance,The Black Parade
+2006,Indie Rock,The Strokes,First Impressions of Earth
+2006,Alternative Rock,Muse,Black Holes and Revelations
+2006,Hip Hop,Lupe Fiasco,Lupe Fiasco's Food & Liquor
+2006,Indie Rock,TV on the Radio,Return to Cookie Mountain
+2006,Metalcore,Bring Me The Horizon,Count Your Blessings
+2006,Indie Folk,Joanna Newsom,Ys
+2006,Hardcore Techno,Angerfist,Pumping Blood
+2007,Dubstep,Burial,Untrue
+2007,Alternative Rock,Radiohead,In Rainbows
+2007,Indie Rock,Arcade Fire,Neon Bible
+2007,Indie Folk,Bon Iver,For Emma Forever Ago
+2007,Pop,Rihanna,Good Girl Gone Bad
+2007,Indie Rock,The National,Boxer
+2007,Math Rock,Battles,Mirrored
+2007,R&B,Alicia Keys,As I Am
+2007,Post-Punk,LCD Soundsystem,Sound of Silver
+2007,Alternative Hip Hop,M.I.A.,Kala
+2007,French Touch,Justice,Cross
+2007,Hardstyle,Showtek,Today Is Tomorrow
+2008,Modern Pop,Lady Gaga,The Fame
+2008,Indie Pop,Vampire Weekend,Vampire Weekend
+2008,Trip Hop,Portishead,Third
+2008,Indie Folk,Fleet Foxes,Fleet Foxes
+2008,Hip Hop,Kanye West,808s & Heartbreak
+2008,Hip Hop,Lil Wayne,Tha Carter III
+2008,Neo Soul,Erykah Badu,New Amerykah Part One (4th World War)
+2008,R&B,Beyonce,I Am... Sasha Fierce
+2008,Pop,Taylor Swift,Fearless
+2008,Shoegaze,M83,Saturdays = Youth
+2008,Jazz,Esperanza Spalding,Esperanza
+2008,Pop,Coldplay,Viva la Vida or Death and All His Friends
+2008,Baile Funk,Deize Tigrona,Garota Chapa Quente
+2009,K-Pop,Girls' Generation,Gee
+2009,Indie Pop,The xx,xx
+2009,Indie Pop,Phoenix,Wolfgang Amadeus Phoenix
+2009,Pop,Lady Gaga,The Fame Monster
+2009,Hip Hop,Raekwon,Only Built 4 Cuban Linx... Pt. II
+2009,Alternative Rock,Muse,The Resistance
+2009,Alternative Rock,Yeah Yeah Yeahs,It's Blitz!
+2009,Indie Rock,Grizzly Bear,Veckatimest
+2009,Chiptune,Anamanaguchi,Dawn Metropolis
+2009,Hardstyle,Headhunterz,Studio Sessions
+2009,Vocaloid,supercell,supercell
+2009,Dream Pop,Animal Collective,Merriweather Post Pavilion
+2009,Progressive Rock,Dirty Projectors,Bitte Orca
+2009,Heavy Metal,Mastodon,Crack the Skye
+2010,Hip Hop,Kanye West,My Beautiful Dark Twisted Fantasy
+2010,IDM,Flying Lotus,Cosmogramma
 2010,Vaporwave,Chuck Person,Chuck Person's Eccojams Vol. 1
+2010,Dream Pop,Beach House,Teen Dream
+2010,Indie Rock,Arcade Fire,The Suburbs
+2010,Synth-Pop,Robyn,Body Talk
+2010,Indie Rock,Deerhunter,Halcyon Digest
+2010,Neo Soul,Janelle Monae,The ArchAndroid
+2010,Psychedelic Rock,Tame Impala,Innerspeaker
+2010,Hip Hop,Big Boi,Sir Lucious Left Foot: The Son of Chico Dusty
+2010,Post-Punk,LCD Soundsystem,This Is Happening
+2010,Blues,The Black Keys,Brothers
+2010,Pop,Sufjan Stevens,The Age of Adz
+2010,Brostep,Skrillex,Scary Monsters and Nice Sprites
+2011,Synthwave,Kavinsky,Nightcall
+2011,Vaporwave,Macintosh Plus,Floral Shoppe
+2011,Indie Folk,Bon Iver,Bon Iver
+2011,Indie Folk,Fleet Foxes,Helplessness Blues
+2011,Alternative Rock,PJ Harvey,Let England Shake
+2011,Hip Hop,Drake,Take Care
+2011,Synth-Pop,M83,Hurry Up We're Dreaming
+2011,Hip Hop,Tyler The Creator,Goblin
+2011,UK Bass,Burial,Street Halo
+2011,Pop,St. Vincent,Strange Mercy
+2011,Contemporary R&B,The Weeknd,House of Balloons
+2011,Contemporary R&B,Frank Ocean,Nostalgia Ultra
+2011,Electronica,James Blake,James Blake
+2011,Alternative Hip Hop,Death Grips,Exmilitary
+2011,UK Bass,Katy B,On a Mission
+2011,Vocaloid,wowaka,Unhappy Refrain
+2011,Brostep,Skrillex,Bangarang
+2011,Brostep,Excision,X Rated
+2012,EDM,Avicii,Levels
+2012,Neo Soul,Frank Ocean,channel ORANGE
+2012,EDM,Zedd,Clarity
+2012,Synthwave,Carpenter Brut,EP I
 2012,Bedroom Pop,Mac DeMarco,2
 2012,Vaporwave,Blank Banshee,Blank Banshee 0
+2012,Hip Hop,Kendrick Lamar,good kid m.A.A.d city
+2012,Psychedelic Rock,Tame Impala,Lonerism
+2012,Synth-Pop,Grimes,Visions
+2012,Dream Pop,Beach House,Bloom
+2012,Indie Pop,Alt-J,An Awesome Wave
+2012,Drill,Chief Keef,Finally Rich
+2012,Pop,Fiona Apple,The Idler Wheel...
+2012,Alternative Rock,Swans,The Seer
+2012,Heavy Metal,Deftones,Koi No Yokan
+2012,Alternative Hip Hop,Death Grips,The Money Store
+2012,Chiptune,Disasterpeace,FEZ (Original Soundtrack)
+2012,Future Bass,Flume,Flume
+2012,Phonk,SpaceGhostPurrp,Mysterious Phonk: Chronicles of SpaceGhostPurrp
+2013,Indie Pop,Vampire Weekend,Modern Vampires of the City
+2013,Disco,Daft Punk,Random Access Memories
+2013,R&B,Beyonce,Beyonce
+2013,Indie Rock,Arctic Monkeys,AM
+2013,House,Disclosure,Settle
+2013,Synth-Pop,CHVRCHES,The Bones of What You Believe
+2013,Hip Hop,A$AP Rocky,LONG.LIVE.A$AP
+2013,Jazz,Gregory Porter,Liquid Spirit
+2013,Alternative Hip Hop,Kanye West,Yeezus
+2013,Pop,Lorde,Pure Heroine
+2013,Contemporary R&B,Blood Orange,Cupid Deluxe
+2013,Chiptune,Anamanaguchi,Endless Fantasy
+2013,Phonk,DJ Smokey,Evil Wayz
 2014,Hyperpop,A.G. Cook,Beautiful
 2014,Synthwave,Perturbator,Dangerous Days
+2014,Neo Soul,D'Angelo and the Vanguard,Black Messiah
+2014,Hip Hop,Run the Jewels,Run the Jewels 2
+2014,Indie Rock,The War on Drugs,Lost in the Dream
+2014,Indie Pop,Mac DeMarco,Salad Days
+2014,Pop,Taylor Swift,1989
+2014,Electronica,Aphex Twin,Syro
+2014,Contemporary R&B,FKA twigs,LP1
+2014,Pop,St. Vincent,St. Vincent
+2014,Electronica,Flying Lotus,You're Dead!
+2015,Hip Hop,Kendrick Lamar,To Pimp a Butterfly
+2015,Trap,Future,DS2
+2015,Vaporwave,2814,新しい日の誕生 (Birth of a New Day)
 2015,Lo-Fi Hip Hop,tomppabeats,Harbor
+2015,Jazz,Kamasi Washington,The Epic
+2015,Indie Folk,Sufjan Stevens,Carrie & Lowell
+2015,Indie Rock,Courtney Barnett,Sometimes I Sit and Think...
+2015,Pop,Carly Rae Jepsen,Emotion
+2015,Indie Folk,Father John Misty,I Love You Honeybear
+2015,Hip Hop,Vince Staples,Summertime '06
+2015,Dream Pop,Beach House,Depression Cherry
+2015,Dream Pop,Tame Impala,Currents
+2015,Pop,Grimes,Art Angels
+2015,Contemporary R&B,The Weeknd,Beauty Behind the Madness
+2015,UK Bass,Jamie xx,In Colour
+2016,Modern Pop,Beyoncé,Lemonade
+2016,Amapiano,MFR Souls,Amapiano Volume 1
 2016,Synthwave,The Midnight,Endless Summer
+2016,R&B,Frank Ocean,Blonde
+2016,Pop,David Bowie,Blackstar
+2016,Neo Soul,Solange,A Seat at the Table
+2016,Hip Hop,A Tribe Called Quest,We Got It from Here...
+2016,Neo Soul,Anderson .Paak,Malibu
+2016,Indie Rock,Mitski,Puberty 2
+2016,Indie Rock,Angel Olsen,My Woman
+2016,R&B,Rihanna,Anti
+2016,Alternative Hip Hop,Danny Brown,Atrocity Exhibition
+2016,Future Bass,Flume,Skin
+2016,Progressive Rock,Radiohead,A Moon Shaped Pool
+2016,Indie Folk,Bon Iver,22 A Million
+2016,Grime,Skepta,Konnichiwa
+2016,Future Bass,Illenium,Ashes
+2017,Bedroom Pop,Clairo,Pretty Girl
+2017,Reggaeton,Luis Fonsi,Despacito
 2017,Lo-Fi Hip Hop,bsd.u,Late Night Bumps
+2017,Hip Hop,Kendrick Lamar,DAMN.
+2017,Hip Hop,Tyler The Creator,Flower Boy
+2017,Indie Rock,The National,Sleep Well Beast
+2017,Hip Hop,Vince Staples,Big Fish Theory
+2017,Indie Rock,Fleet Foxes,Crack-Up
+2017,Afrobeats,Wizkid,Sounds from the Other Side
+2017,Pop,Lorde,Melodrama
+2017,Contemporary R&B,SZA,Ctrl
+2017,Post-Punk,LCD Soundsystem,American Dream
+2017,Pop,St. Vincent,Masseduction
+2017,Contemporary R&B,Kelela,Take Me Apart
+2018,Trap,Travis Scott,ASTROWORLD
+2018,Hyperpop,SOPHIE,Oil of Every Pearl's Un-Insides
+2018,R&B,Janelle Monae,Dirty Computer
+2018,Indie Rock,Mitski,Be the Cowboy
+2018,Hip Hop,Pusha T,Daytona
+2018,Synth-Pop,Robyn,Honey
+2018,Post-Punk,Idles,Joy as an Act of Resistance
+2018,Hip Hop,Kids See Ghosts,Kids See Ghosts
+2018,Dream Pop,Beach House,7
+2018,Jazz,Sons of Kemet,Your Queen Is a Reptile
+2018,Country,Kacey Musgraves,Golden Hour
+2018,Alternative Hip Hop,Earl Sweatshirt,Some Rap Songs
+2018,Flamenco,Rosalia,El Mal Querer
+2019,Amapiano,Kabza De Small,Scorpion Kings
+2019,Hyperpop,100 gecs,1000 gecs
 2019,Bedroom Pop,beabadoobee,Space Cadet
+2019,Hip Hop,Tyler The Creator,IGOR
+2019,Pop,Billie Eilish,When We All Fall Asleep Where Do We Go?
+2019,Indie Pop,Vampire Weekend,Father of the Bride
+2019,Indie Folk,Big Thief,U.F.O.F.
+2019,Post-Punk,Fontaines D.C.,Dogrel
+2019,Pop,Lana Del Rey,Norman Fucking Rockwell!
+2019,Contemporary R&B,FKA twigs,Magdalene
+2019,Pop,Weyes Blood,Titanic Rising
+2019,Contemporary R&B,Solange,When I Get Home
+2019,Electronica,Flume,Hi This Is Flume
+2019,Afrobeats,Burna Boy,African Giant
+2020,K-Pop,BTS,Dynamite
 2020,Hyperpop,Charli XCX,how i'm feeling now
-1830,Romantic,Hector Berlioz,Symphonie fantastique
-1876,Romantic,Johannes Brahms,Symphony No. 1
-1893,Romantic,Antonín Dvořák,Symphony No. 9 'From the New World'
-1914,Modern Classical,Ralph Vaughan Williams,The Lark Ascending
-1924,Modern Classical,George Gershwin,Rhapsody in Blue
-1927,Country,Jimmie Rodgers,Blue Yodel No. 1 (T for Texas)
-1928,Blues,Pinetop Smith,Pinetop's Boogie Woogie
-1929,Delta Blues,Charley Patton,Pony Blues
-1930,Delta Blues,Son House,Preachin' the Blues
-1931,Delta Blues,Skip James,Devil Got My Woman
-1938,Gospel,Sister Rosetta Tharpe,Rock Me
-1948,Electric Blues,John Lee Hooker,Boogie Chillen'
-1949,Electric Blues,T-Bone Walker,Call It Stormy Monday
-1923,New Orleans Jazz,King Oliver's Creole Jazz Band,Dippermouth Blues
-1924,Jazz,Fletcher Henderson,Copenhagen
-1935,Swing,Benny Goodman,"Sing, Sing, Sing"
-1937,Swing,Count Basie,One O'Clock Jump
-1938,Swing,Artie Shaw,Begin the Beguine
-1939,Swing,Glenn Miller,In the Mood
-1939,Jazz,Coleman Hawkins,Body and Soul
-1945,Bebop,Dizzy Gillespie,Salt Peanuts
-1947,Bebop,Dizzy Gillespie & Chano Pozo,Manteca
-1949,Cool Jazz,Miles Davis,Birth of the Cool (Sessions)
-1946,R&B,Louis Jordan,Choo Choo Ch'Boogie
-1947,R&B,Wynonie Harris,Good Rockin' Tonight
-1949,R&B,Fats Domino,The Fat Man
-1949,R&B,Professor Longhair,Mardi Gras in New Orleans
-1939,Samba,Carmen Miranda,O Que É Que A Baiana Tem?
-1939,Calypso,Roaring Lion,Mary Ann
-1888,Romantic,Nikolai Rimsky-Korsakov,Scheherazade
-1892,Romantic,Pyotr Ilyich Tchaikovsky,The Nutcracker
-1909,Modern Classical,Arnold Schoenberg,Erwartung
-1925,Blues,Blind Lemon Jefferson,Black Snake Moan
-1926,New Orleans Jazz,Jelly Roll Morton,Black Bottom Stomp
-1928,Country,The Carter Family,Wildwood Flower
-1933,Jazz,Art Tatum,Tiger Rag
-1937,Delta Blues,Robert Johnson,Hellhound on My Trail
-1940,Traditional Folk,Woody Guthrie,This Land Is Your Land
-1944,Gospel,Sister Rosetta Tharpe,Strange Things Happening Every Day
-1999,UK Garage,Artful Dodger,It's All About the Stragglers
-2000,UK Garage,Craig David,Born to Do It
-1992,Grunge,Alice in Chains,Dirt
-1994,Grunge,Soundgarden,Superunknown
-1978,New Wave,Devo,Q: Are We Not Men? A: We Are Devo!
-1979,New Wave,The Police,Reggatta de Blanc
-1966,Psychedelic Rock,The 13th Floor Elevators,The Psychedelic Sounds of...
-1973,Ambient,Fripp & Eno,No Pussyfooting
-1988,Grunge,Mudhoney,Superfuzz Bigmuff
-2005,Synthwave,Kavinsky,Testarossa Autodrive
-1974,Punk Rock,Patti Smith,Hey Joe (Single)
-1974,Disco,George McCrae,Rock Your Baby
-1979,Dancehall,Barrington Levy,Bounty Hunter
-1990,Reggaeton,Vico C,La Recta Final
-1959,Bossa Nova,Antônio Carlos Jobim,Chega de Saudade (Album)
-1969,Progressive Rock,The Nice,The Nice
+2020,Indie Rock,The Strokes,The New Abnormal
+2020,Hip Hop,Run the Jewels,Run the Jewels 4
+2020,Hip Hop,Mac Miller,Circles
+2020,Indie Pop,Phoebe Bridgers,Punisher
+2020,Indie Rock,Fleet Foxes,Shore
+2020,Post-Punk,Protomartyr,Ultimate Success Today
+2020,Latin Pop,Bad Bunny,YHLQMDLG
+2020,Pop,Taylor Swift,Folklore
+2020,Pop,Fiona Apple,Fetch the Bolt Cutters
+2020,Contemporary R&B,The Weeknd,After Hours
+2020,Afrobeats,Wizkid,Made in Lagos
+2020,Drill,Pop Smoke,"Shoot for the Stars, Aim for the Moon"
+2021,Amapiano,DJ Maphorisa & Tyler ICU,Banyana
+2021,Hip Hop,Tyler The Creator,Call Me If You Get Lost
+2021,Indie Folk,Japanese Breakfast,Jubilee
+2021,Indie Rock,Wet Leg,Wet Leg
+2021,Hip Hop,Little Simz,Sometimes I Might Be Introvert
+2021,Indie Folk,Big Thief,Dragon New Warm Mountain I Believe in You
+2021,Hip Hop,Kanye West,Donda
+2021,Pop,Olivia Rodrigo,SOUR
+2021,Contemporary R&B,Silk Sonic,An Evening with Silk Sonic
+2021,Pop,Lorde,Solar Power
+2021,Rock and Roll,Turnstile,GLOW ON
+2021,Electronica,Arca,KiCk i
+2022,Reggaeton,Bad Bunny,Un Verano Sin Ti
+2022,Hip Hop,Kendrick Lamar,Mr. Morale & the Big Steppers
+2022,Indie Pop,Rosalia,Motomami
+2022,Pop,Beyonce,Renaissance
+2022,Indie Rock,The Smile,A Light for Attracting Attention
+2022,Post-Punk,Fontaines D.C.,Skinty Fia
+2022,Indie Folk,Adrianne Lenker,Songs
+2022,R&B,SZA,SOS
+2022,Hip Hop,Denzel Curry,Melt My Eyez See Your Future
+2022,Pop,Taylor Swift,Midnights
+2022,Phonk,Kordhell,Murder In My Mind
+2023,Amapiano,Tyla,Water
+2023,Indie Rock,Boygenius,The Record
+2023,Pop,Caroline Polachek,Desire I Want to Turn Into You
+2023,Hip Hop,JPEGMAGAF,Scaring the Hoes
+2023,Indie Pop,Mitski,The Land Is Inhospitable and So Are We
+2023,R&B,Kelela,Raven
+2023,Hip Hop,Killer Mike,Michael
+2023,Indie Rock,Blur,The Ballad of Darren
+2023,Pop,Taylor Swift,Speak Now (Taylor's Version)
+2023,Pop,Lana Del Rey,Did You Know That There's a Tunnel Under Ocean Blvd
+2023,Electronica,Four Tet,Three
+2023,Alternative Rock,Swans,The Beggar
