@@ -48,11 +48,18 @@ def main():
         x_pct = (x - x_min_val) / (x_max_val - x_min_val)
         px_x = width_px * 0.05 + x_pct * (width_px * 0.90)
         
-        # Y座標のピクセル換算（MatplotlibとSVGの上下反転を考慮）
+        # Y座標のピクセル換算
         y_pct = (y - y_min_val) / (y_max_val - y_min_val)
         px_y = top_margin_px + (1.0 - y_pct) * plot_height_px
         
-        coords[genre] = {"x": round(px_x, 2), "y": round(px_y, 2)}
+        # データから親ジャンルのリストを取得
+        parents = music_genres[genre].get("parents", [])
+        
+        coords[genre] = {
+            "x": round(px_x, 2), 
+            "y": round(px_y, 2), 
+            "parents": parents
+        }
 
     milestones_data = []
     for m in milestones:

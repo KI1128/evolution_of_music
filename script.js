@@ -2,6 +2,22 @@ const container = document.getElementById('container');
 const img = document.getElementById('image');
 const searchInput = document.getElementById('genre-search');
 const genreListEl = document.getElementById('genre-list');
+const tooltip = document.getElementById('tooltip');
+const HOVER_RADIUS = 40; // 反応する半径（ピクセル）
+
+const CURRENT_YEAR = new Date().getFullYear();
+const DISPLAY_YEARS = [1000, 1400, 1600, 1800, 1900, 1930, 1960, 1980, 2000, 2020];
+
+function warp_time(year) {
+    if (year < 1900) return (year - 1400) * 0.4;
+    return (1900 - 1400) * 0.4 + (year - 1900) * 2.0;
+}
+
+const x_min_val = warp_time(1000) - 10;
+const x_max_val = warp_time(CURRENT_YEAR) + 20;
+
+const timelineBar = document.getElementById('timeline-bar');
+const ticks = [];
 
 let scale = 0.5, posX = 0, posY = 0;
 let isDragging = false, startX, startY;
@@ -57,6 +73,11 @@ renderList();
 // --- 2. 画像の変形を適用 ---
 function applyTransform() {
     img.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
+    
+    ticks.forEach(t => {
+        const screen_x = posX + t.px * scale;
+        t.element.style.left = screen_x + 'px';
+    });
 }
 
 // --- 3. アニメーション（ジャンプ機能） ---
@@ -142,9 +163,62 @@ window.addEventListener('mouseup', () => {
 });
 
 window.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    e.preventDefault();
-    posX = e.clientX - startX;
-    posY = e.clientY - startY;
-    requestAnimationFrame(applyTransform);
+    // === 1. ツールチップのホバー判定 ===
+    // 画面上のマウス座標から、画像内の元のピクセル座標を逆算する
+    const imageX = (e.clientX - posX) / scale;
+    const imageY = (e.clientY - posY) / scale;
+    
+    let hoveredGenre = null;
+    let minDistance = HOVER_RADIUS;
+
+    // 全ジャンルの座標と距離をピタゴラスの定理で計算して、最も近いものを探す
+    for (const [genre, data] of Object.entries(genreCoordinates)) {
+        const dx = imageX - data.x;
+        const dy = imageY - data.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        
+        if (dist < minDistance) {
+            minDistance = dist;
+            hoveredGenre = genre;
+        }
+    }
+
+    // 近くにジャンルがあり、かつ画面をドラッグ中でない場合ツールチップを表示
+    if (hoveredGenre && !isDragging) {
+        const parents = genreCoordinates[hoveredGenre].parents;
+        const parentText = parents && parents.length > 0 ? parents.join(', ') : 'なし';
+        
+        tooltip.innerHTML = `<strong>🎵 ${hoveredGenre}</strong><br><span style="font-size:12px; color:#aaa;">親: ${parentText}</span>`;
+        tooltip.style.display = 'block';
+        tooltip.style.left = (e.clientX + 15) + 'px';
+        tooltip.style.top = (e.clientY + 15) + 'px';
+        container.style.cursor = 'pointer';
+    } else {
+        tooltip.style.display = 'none';
+        container.style.cursor = isDragging ? 'grabbing' : 'grab';
+    }
+
+    // === 2. 画面のドラッグ移動処理 ===
+    if (isDragging) {
+        e.preventDefault();
+        posX = e.clientX - startX;
+        posY = e.clientY - startY;
+        requestAnimationFrame(applyTransform);
+    }
+});
+
+// DOM読み込み時に年代の目盛り(div)を作成
+window.addEventListener('DOMContentLoaded', () => {
+    DISPLAY_YEARS.forEach(year => {
+        const el = document.createElement('div');
+        el.className = 'timeline-tick';
+        el.innerText = year;
+        timelineBar.appendChild(el);
+        
+        const data_x = warp_time(year);
+        const percent = (data_x - x_min_val) / (x_max_val - x_min_val);
+        // coordinates.js の imageConfig.width を使用
+        const pixel_x = (0.05 + 0.9 * percent) * imageConfig.width; 
+        ticks.push({ element: el, px: pixel_x });
+    });
 });
