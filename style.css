@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    background-color: #111;
+    overflow: hidden;
+    color: white;
+    font-family: 'Meiryo', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    cursor: grab;
+}
+
+#image {
+    transform-origin: 0 0;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+    overflow: hidden;
+    color: white;
+    font-family: 'Meiryo', sans-serif;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    cursor: grab;
+}
+
+#image {
+    transform-origin: 0 0;
+    display: block;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#header-title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), transparent);
+    pointer-events: none;
+    z-index: 50;
+    text-shadow: 0 2px 4px #000;
+}
+
+#toggle-ui-btn {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    z-index: 101;
+    background: #1565C0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#toggle-ui-btn:hover {
+    background: #1976D2;
+}
+
+/* 検索UIのデザイン */
+#ui {
+    position: absolute;
+    top: 65px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100vh - 140px);
+}
+
+#genre-search {
+    padding: 8px;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#genre-list {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.genre-item {
+    cursor: pointer;
+    padding: 6px 8px;
+    font-size: 13px;
+    background: #222;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.genre-item:hover {
+    background: #1565C0;
+    font-weight: bold;
+    transform: translateX(5px);
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #666;
+}

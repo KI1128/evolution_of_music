@@ -1,35 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>The Evolution of Music</title>
-    <!-- 先ほどPythonが生成した座標データを読み込む -->
+    <!-- 生成された座標データ -->
     <script src="coordinates.js"></script>
-    <style>
-        body { margin: 0; background-color: #111; overflow: hidden; color: white; font-family: 'Meiryo', sans-serif; }
-        #container { width: 100vw; height: 100vh; cursor: grab; }
-        #image { transform-origin: 0 0; display: block; user-select: none; -webkit-user-drag: none; }
-        
-        #header-title { position: absolute; top: 0; width: 100%; text-align: center; padding: 15px 0; font-size: 24px; font-weight: bold; background: linear-gradient(rgba(0,0,0,0.8), transparent); pointer-events: none; z-index: 50; text-shadow: 0 2px 4px #000; }
 
-        #toggle-ui-btn { position: absolute; top: 15px; left: 20px; z-index: 101; background: #1565C0; box-shadow: 0 2px 5px rgba(0,0,0,0.5); }
-        #toggle-ui-btn:hover { background: #1976D2; }
-        
-        /* 検索UIのデザイン */
-        #ui { position: absolute; top: 65px; left: 20px; background: rgba(0,0,0,0.85); padding: 15px; border-radius: 8px; z-index: 100; box-shadow: 0 4px 10px rgba(0,0,0,0.8); width: 280px; display: flex; flex-direction: column; max-height: calc(100vh - 140px); }
-        #genre-search { padding: 8px; background: #222; color: white; border: 1px solid #555; border-radius: 4px; margin-bottom: 10px; font-size: 14px; width: 100%; box-sizing: border-box; }
-        #genre-list { overflow-y: auto; display: flex; flex-direction: column; gap: 4px; padding-right: 5px; margin-bottom: 10px; }
-        
-        .genre-item { cursor: pointer; padding: 6px 8px; font-size: 13px; background: #222; border-radius: 4px; transition: 0.2s; }
-        .genre-item:hover { background: #1565C0; font-weight: bold; transform: translateX(5px); }
-        
-        button { padding: 10px; cursor: pointer; background: #444; color: white; border: none; border-radius: 4px; font-weight: bold; font-size: 14px; transition: 0.2s; }
-        button:hover { background: #666; }
-    </style>
+    <!-- 🌟 分割したCSSを読み込む -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="header-title">The Evolution of Music</div>
-    
     <button id="toggle-ui-btn" onclick="toggleUI()">👁️ 検索を非表示</button>
 
     <div id="ui">
@@ -38,162 +21,13 @@
         <div id="genre-list"></div>
         <button onclick="resetView()">🗺️ 全体表示に戻す</button>
     </div>
-    
+
     <div id="container">
         <img id="image" src="music_tree_optimized.svg" alt="Music Evolution Graph" draggable="false">
     </div>
 
-    <script>
-        const container = document.getElementById('container');
-        const img = document.getElementById('image');
-        const searchInput = document.getElementById('genre-search');
-        const genreListEl = document.getElementById('genre-list');
-        
-        let scale = 0.5, posX = 0, posY = 0;
-        let isDragging = false, startX, startY;
-        let animationFrame;
-
-        function toggleUI() {
-            const ui = document.getElementById('ui');
-            const btn = document.getElementById('toggle-ui-btn');
-            if (ui.style.display === 'none') {
-                ui.style.display = 'flex';
-                btn.innerText = '👁️ 検索を非表示';
-            } else {
-                ui.style.display = 'none';
-                btn.innerText = '🔍 検索を表示';
-            }
-        }
-
-        // --- 1. ジャンルリストの描画 ---
-        function renderList(filter = '') {
-            genreListEl.innerHTML = '';
-            const lowerFilter = filter.toLowerCase();
-            
-            // 1. ジャンルの検索と描画
-            const genres = Object.keys(genreCoordinates).sort();
-            genres.forEach(g => {
-                if (g.toLowerCase().includes(lowerFilter)) {
-                    const el = document.createElement('div');
-                    el.className = 'genre-item';
-                    el.innerText = `🎵 ${g}`; // アイコンで区別
-                    el.onclick = () => jumpToPosition(genreCoordinates[g].x, genreCoordinates[g].y);
-                    genreListEl.appendChild(el);
-                }
-            });
-
-            // 2. マイルストーンの検索と描画
-            if (typeof milestoneCoordinates !== 'undefined') {
-                milestoneCoordinates.forEach(m => {
-                    // 曲名・アーティスト名・年・ジャンル名のどれにでもヒットするようにする
-                    const searchTarget = `${m.work} ${m.artist} ${m.year} ${m.genre}`.toLowerCase();
-                    if (searchTarget.includes(lowerFilter)) {
-                        const el = document.createElement('div');
-                        el.className = 'genre-item';
-                        el.innerText = `💿 ${m.work} / ${m.artist} (${m.year})`; // アイコンで区別
-                        el.onclick = () => jumpToPosition(m.x, m.y);
-                        genreListEl.appendChild(el);
-                    }
-                });
-            }
-        }
-        searchInput.addEventListener('input', (e) => renderList(e.target.value));
-        renderList();
-
-        // --- 2. 画像の変形を適用 ---
-        function applyTransform() {
-            img.style.transform = `translate(${posX}px, ${posY}px) scale(${scale})`;
-        }
-
-        // --- 3. アニメーション（ジャンプ機能） ---
-        function animateTo(targetX, targetY, targetScale) {
-            cancelAnimationFrame(animationFrame);
-            const duration = 1000; // アニメーションの長さ（ミリ秒）
-            const startTime = performance.now();
-            const initX = posX, initY = posY, initScale = scale;
-            
-            function step(currentTime) {
-                let progress = (currentTime - startTime) / duration;
-                if (progress > 1) progress = 1;
-                
-                // スムーズなイージング（徐々に減速）
-                const ease = 1 - Math.pow(1 - progress, 3);
-                
-                posX = initX + (targetX - initX) * ease;
-                posY = initY + (targetY - initY) * ease;
-                scale = initScale + (targetScale - initScale) * ease;
-                
-                applyTransform();
-                
-                if (progress < 1) {
-                    animationFrame = requestAnimationFrame(step);
-                }
-            }
-            animationFrame = requestAnimationFrame(step);
-        }
-
-        function jumpToPosition(targetX, targetY) {
-            const targetScale = 2.0; // ズームインの強さ
-            const screenW = window.innerWidth;
-            const screenH = window.innerHeight;
-            
-            const targetPosX = (screenW / 2) - (targetX * targetScale);
-            const targetPosY = (screenH / 2) - (targetY * targetScale);
-            
-            animateTo(targetPosX, targetPosY, targetScale);
-        }
-
-        function resetView() {
-            // 初期状態（全体が見える位置）に戻す
-            animateTo(50, 50, 0.4);
-        }
-
-        // 初期表示位置
-        img.onload = () => { 
-            // 💡 ここに追加：Pythonが計算した「本来のピクセルサイズ」をブラウザに強制する
-            img.style.width = imageConfig.width + 'px';
-            img.style.height = imageConfig.height + 'px';
-            
-            resetView(); 
-        };
-
-        // --- 4. マウス操作（ホイールズームとドラッグ） ---
-        container.addEventListener('wheel', (e) => {
-            e.preventDefault();
-            cancelAnimationFrame(animationFrame); // 手動操作中はアニメを止める
-            const xs = (e.clientX - posX) / scale;
-            const ys = (e.clientY - posY) / scale;
-            const delta = e.deltaY > 0 ? 0.85 : 1.15;
-            scale *= delta;
-            posX = e.clientX - xs * scale;
-            posY = e.clientY - ys * scale;
-            applyTransform();
-        });
-
-        container.addEventListener('mousedown', (e) => {
-            if (e.target.closest('#ui')) return;
-            e.preventDefault(); 
-            cancelAnimationFrame(animationFrame);
-            isDragging = true;
-            startX = e.clientX - posX;
-            startY = e.clientY - posY;
-            container.style.cursor = 'grabbing';
-        });
-
-        window.addEventListener('mouseup', () => {
-            if (isDragging) {
-                isDragging = false;
-                container.style.cursor = 'grab';
-            }
-        });
-
-        window.addEventListener('mousemove', (e) => {
-            if (!isDragging) return;
-            e.preventDefault();
-            posX = e.clientX - startX;
-            posY = e.clientY - startY;
-            requestAnimationFrame(applyTransform);
-        });
-    </script>
+    <!-- 🌟 分割したJavaScriptを読み込む -->
+    <script src="script.js"></script>
 </body>
+
 </html>
