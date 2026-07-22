@@ -222,3 +222,21 @@ window.addEventListener('DOMContentLoaded', () => {
         ticks.push({ element: el, px: pixel_x });
     });
 });
+
+// --- お問い合わせモーダルの開閉処理 ---
+function openContactModal(e) {
+    e.preventDefault();
+    document.getElementById('contact-modal').style.display = 'flex';
+}
+
+function closeContactModal() {
+    document.getElementById('contact-modal').style.display = 'none';
+}
+
+// モーダルの外側をクリックしても閉じるようにする機能
+window.addEventListener('click', (e) => {
+    const modal = document.getElementById('contact-modal');
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
