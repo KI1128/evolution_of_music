@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import subprocess
 import re
-import webbrowser  # 💡 ブラウザを開くためのモジュールを追加
-import os          # 💡 ファイルの絶対パスを取得するためのモジュールを追加
+import webbrowser
+import os
 
 st.set_page_config(page_title="Music Evolution Editor", layout="wide")
 st.title("🎵 The River of Music - Data Editor")
@@ -26,7 +26,6 @@ if menu == "Genres (ジャンル)":
     genres_list = df_genres['genre'].dropna().tolist()
     
     with col_editor:
-        # エラーになっていた ColorColumn をテキスト入力（正規表現チェック付き）に変更
         edited_df = st.data_editor(
             df_genres,
             column_config={
@@ -106,7 +105,7 @@ if menu == "Genres (ジャンル)":
                 st.markdown(f"```mermaid\n{chr(10).join(mermaid_lines)}\n```")
                 
                 # ==========================================
-                # 💡 詳細編集エリア（親の複数選択 ＆ カラーパレット）
+                # 詳細編集エリア（親の複数選択 ＆ カラーパレット）
                 # ==========================================
                 st.divider()
                 st.write(f"📝 **{target_genre}** の詳細編集")

@@ -71,10 +71,6 @@ def calculate_layout(music_genres, milestones):
             # (A) 作品数の平方根（緩やかに増加） + (B) 密度に応じた広がり
             extra_space = (math.sqrt(milestone_count) * 2) + (density * 4)
             
-            # 極端に広がりすぎないよう、最大15.0でキャップ（上限）を設ける
-            # extra_space = min(extra_space, 15.0) 
-            
-            # 以前の (milestone_count * 0.8) から置き換え
             current_y += BASE_SPACING + extra_space
             
         for genre in lane:
