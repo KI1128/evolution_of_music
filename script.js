@@ -51,7 +51,13 @@ const i18n = {
         lockHint: '📌 固定中（テキストをコピーできます。背景をクリックで解除）',
         parentText: '親: ',
         noneText: 'なし',
-        otherSongs: '...他 {count} 曲' // {count}は後で置換します
+        otherSongs: '...他 {count} 曲',
+        
+        modalTitle: '📬 お問い合わせ・リクエスト',
+        modalDesc: 'このサイトへのジャンル追加や名盤のリクエストはこちらからお願いします！',
+        modalBtnGenre: '🎸 ジャンルの追加・修正をリクエスト',
+        modalBtnMilestone: '💿 名盤・マイルストーンをリクエスト',
+        modalBtnOther: '📝 その他のお問い合わせ'
     },
     en: {
         langBtn: '🌐 日本語',
@@ -65,7 +71,13 @@ const i18n = {
         lockHint: '📌 Locked (Select text to copy. Click background to unlock)',
         parentText: 'Parent: ',
         noneText: 'None',
-        otherSongs: '...and {count} more'
+        otherSongs: '...and {count} more',
+
+        modalTitle: '📬 Contact & Requests',
+        modalDesc: 'Please submit your requests for new genres or albums here!',
+        modalBtnGenre: '🎸 Request Genre Addition / Fix',
+        modalBtnMilestone: '💿 Request Milestone / Album',
+        modalBtnOther: '📝 Other Inquiries'
     }
 };
 
@@ -87,6 +99,13 @@ function toggleLanguage() {
     document.querySelector('#ui label').innerText = t.searchLabel;
     document.getElementById('genre-search').placeholder = t.searchPlaceholder;
     document.querySelector('#ui button[onclick="resetView()"]').innerText = t.resetView;
+    
+    // モーダル内のテキストを書き換え
+    document.getElementById('modal-title').innerText = t.modalTitle;
+    document.getElementById('modal-desc').innerText = t.modalDesc;
+    document.getElementById('modal-btn-genre').innerText = t.modalBtnGenre;
+    document.getElementById('modal-btn-milestone').innerText = t.modalBtnMilestone;
+    document.getElementById('modal-btn-other').innerText = t.modalBtnOther;
 }
 
 // --- 1. ジャンルリストの描画 ---

@@ -13,27 +13,31 @@
 
 <body>
     <div id="header-title">The Evolution of Music</div>
-    <button id="lang-toggle-btn" onclick="toggleLanguage()" style="position: absolute; top: 15px; right: 220px; z-index: 101; background: #333; padding: 8px 12px; border-radius: 4px;">🌐 English</button>
-    <div id="tooltip"></div>
-    <a href="#" id="contact-btn" onclick="openContactModal(event)">💬 お問い合わせ・リクエスト</a>
 
-    <!-- 🌟 追加：お問い合わせ用のポップアップ（モーダル）の中身 -->
+    <!-- ボタンをグループ化して横並び（Flexbox）にし、被りを防止 -->
+    <div id="top-right-menu" style="position: absolute; top: 20px; right: 20px; z-index: 101; display: flex; gap: 10px; align-items: center;">
+        <button id="lang-toggle-btn" onclick="toggleLanguage()" style="background: rgba(0, 0, 0, 0.7); color: white; padding: 8px 12px; border-radius: 4px; border: 1px solid rgba(255, 255, 255, 0.2); cursor: pointer; backdrop-filter: blur(5px); font-family: inherit;">🌐 English</button>
+        <!-- styleを追加し、CSS側の絶対配置を上書き -->
+        <a href="#" id="contact-btn" onclick="openContactModal(event)" style="position: relative; top: 0; right: 0;">💬 お問い合わせ・リクエスト</a>
+    </div>
+
+    <div id="tooltip"></div>
+
+    <!-- お問い合わせ用のポップアップ（モーダル）の中身 -->
     <div id="contact-modal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close-btn" onclick="closeContactModal()">&times;</span>
-            <h2>📬 お問い合わせ・リクエスト</h2>
-            <p style="color: #aaa; font-size: 13px;">このサイトへのジャンル追加や名盤のリクエストはこちらからお願いします！</p>
+            <h2 id="modal-title">📬 お問い合わせ・リクエスト</h2>
+            <p id="modal-desc" style="color: #aaa; font-size: 13px;">このサイトへのジャンル追加や名盤のリクエストはこちらからお願いします！</p>
 
             <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 20px;">
-                <a href="https://forms.gle/43CrX7MASWM4oWDJ6" target="_blank" class="modal-link-btn">
+                <a href="https://forms.gle/43CrX7MASWM4oWDJ6" target="_blank" class="modal-link-btn" id="modal-btn-genre">
                     🎸 ジャンルの追加・修正をリクエスト
                 </a>
-                <a href="https://forms.gle/ge6uhWPP2ZUJNpqL6" target="_blank" class="modal-link-btn"
-                    style="background: #2E7D32;">
+                <a href="https://forms.gle/ge6uhWPP2ZUJNpqL6" target="_blank" class="modal-link-btn" id="modal-btn-milestone" style="background: #2E7D32;">
                     💿 名盤・マイルストーンをリクエスト
                 </a>
-                <a href="https://forms.gle/AUmN5CJtozPvYqxD7" target="_blank" class="modal-link-btn"
-                    style="background: #3d3d3d;">
+                <a href="https://forms.gle/AUmN5CJtozPvYqxD7" target="_blank" class="modal-link-btn" id="modal-btn-other" style="background: #3d3d3d;">
                     📝 その他のお問い合わせ
                 </a>
             </div>
