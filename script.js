@@ -133,9 +133,12 @@ img.onload = () => {
 };
 
 // --- 4. マウス操作（ホイールズームとドラッグ） ---
+let isTooltipLocked = false;
+let clickStartX, clickStartY;
+
 container.addEventListener('wheel', (e) => {
     e.preventDefault();
-    cancelAnimationFrame(animationFrame); // 手動操作中はアニメを止める
+    cancelAnimationFrame(animationFrame); 
     const xs = (e.clientX - posX) / scale;
     const ys = (e.clientY - posY) / scale;
     const delta = e.deltaY > 0 ? 0.85 : 1.15;
@@ -146,32 +149,55 @@ container.addEventListener('wheel', (e) => {
 });
 
 container.addEventListener('mousedown', (e) => {
-    if (e.target.closest('#ui')) return;
+    // UIやツールチップ内をクリックした場合はドラッグを無効化
+    if (e.target.closest('#ui') || e.target.closest('#tooltip')) return;
     e.preventDefault();
     cancelAnimationFrame(animationFrame);
     isDragging = true;
     startX = e.clientX - posX;
     startY = e.clientY - posY;
+    
+    // クリック判定用に座標を保存
+    clickStartX = e.clientX;
+    clickStartY = e.clientY;
     container.style.cursor = 'grabbing';
 });
 
-window.addEventListener('mouseup', () => {
+window.addEventListener('mouseup', (e) => {
     if (isDragging) {
         isDragging = false;
         container.style.cursor = 'grab';
+        
+        // クリック判定（マウスがほぼ動いていない場合）
+        const dist = Math.hypot(e.clientX - clickStartX, e.clientY - clickStartY);
+        if (dist < 5 && tooltip.style.display === 'block' && !isTooltipLocked) {
+            // ツールチップをロック（固定）する
+            isTooltipLocked = true;
+            tooltip.style.border = '2px solid #42A5F5';
+            tooltip.innerHTML = '<div style="font-size:12px; color:#42A5F5; margin-bottom:10px; border-bottom:1px solid #555; padding-bottom:5px;">📌 固定中（テキストをコピーできます。背景をクリックで解除）</div>' + tooltip.innerHTML;
+            return;
+        }
+    }
+    
+    // ロック中に背景（ツールチップ外）をクリックしたら解除
+    if (isTooltipLocked && !e.target.closest('#tooltip')) {
+        isTooltipLocked = false;
+        tooltip.style.display = 'none';
+        tooltip.style.border = '1px solid #555';
     }
 });
 
 window.addEventListener('mousemove', (e) => {
+    // ロック中はマウスが動いてもツールチップを更新しない
+    if (isTooltipLocked) return;
+
     // === 1. ツールチップのホバー判定 ===
-    // 画面上のマウス座標から、画像内の元のピクセル座標を逆算する
     const imageX = (e.clientX - posX) / scale;
     const imageY = (e.clientY - posY) / scale;
     
     let hoveredGenre = null;
     let minDistance = HOVER_RADIUS;
 
-    // 全ジャンルの座標と距離をピタゴラスの定理で計算して、最も近いものを探す
     for (const [genre, data] of Object.entries(genreCoordinates)) {
         const dx = imageX - data.x;
         const dy = imageY - data.y;
@@ -183,16 +209,68 @@ window.addEventListener('mousemove', (e) => {
         }
     }
 
-    // 近くにジャンルがあり、かつ画面をドラッグ中でない場合ツールチップを表示
-    if (hoveredGenre && !isDragging) {
-        const parents = genreCoordinates[hoveredGenre].parents;
-        const parentText = parents && parents.length > 0 ? parents.join(', ') : 'なし';
+    let hoveredMilestones = [];
+    if (typeof milestoneCoordinates !== 'undefined') {
+        milestoneCoordinates.forEach(m => {
+            const dx = imageX - m.x;
+            const dy = imageY - m.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            
+            if (dist < HOVER_RADIUS) {
+                hoveredMilestones.push(m);
+            }
+        });
+    }
+
+    if ((hoveredGenre || hoveredMilestones.length > 0) && !isDragging) {
+        let tooltipHTML = '';
         
-        tooltip.innerHTML = `<strong>🎵 ${hoveredGenre}</strong><br><span style="font-size:12px; color:#aaa;">親: ${parentText}</span>`;
+        // ホバー時に「クリックで固定できる」旨のヒントを表示
+        tooltipHTML += '<div style="font-size: 11px; color: #81D4FA; margin-bottom: 8px; text-align: right; border-bottom: 1px dashed #555; padding-bottom: 4px;">🖱️ クリックで固定してコピー</div>';
+
+        if (hoveredGenre) {
+            const parents = genreCoordinates[hoveredGenre].parents;
+            const parentText = parents && parents.length > 0 ? parents.join(', ') : 'なし';
+            tooltipHTML += `<strong>🎵 ${hoveredGenre}</strong><br><span style="font-size:12px; color:#aaa;">親: ${parentText}</span>`;
+        }
+
+        if (hoveredMilestones.length > 0) {
+            if (hoveredGenre) tooltipHTML += '<hr style="border-top: 1px solid #555; margin: 10px 0;">';
+            
+            tooltipHTML += '<div style="display: flex; flex-wrap: wrap; gap: 10px; max-width: 900px;">';
+            hoveredMilestones.forEach(m => {
+                tooltipHTML += `
+                    <div style="flex: 1 1 200px; background: #222; padding: 8px; border-radius: 4px; border: 1px solid #444;">
+                        <strong>💿 ${m.work}</strong><br>
+                        <span style="font-size:12px; color:#ccc;">${m.artist} (${m.year})</span><br>
+                        <span style="font-size:11px; color:#888;">${m.genre}</span>
+                    </div>
+                `;
+            });
+            tooltipHTML += '</div>';
+        }
+
+        tooltip.innerHTML = tooltipHTML;
         tooltip.style.display = 'block';
-        tooltip.style.left = (e.clientX + 15) + 'px';
-        tooltip.style.top = (e.clientY + 15) + 'px';
+        
+        // 初期の表示位置（はみ出しを考慮する前の仮置き）
+        let tipX = e.clientX + 15;
+        let tipY = e.clientY + 15;
+        tooltip.style.left = tipX + 'px';
+        tooltip.style.top = tipY + 'px';
         container.style.cursor = 'pointer';
+
+        // ツールチップが画面外にはみ出ないように描画直後に位置を補正
+        requestAnimationFrame(() => {
+            const rect = tooltip.getBoundingClientRect();
+            if (rect.right > window.innerWidth) {
+                tooltip.style.left = Math.max(10, window.innerWidth - rect.width - 15) + 'px';
+            }
+            if (rect.bottom > window.innerHeight) {
+                tooltip.style.top = Math.max(10, window.innerHeight - rect.height - 15) + 'px';
+            }
+        });
+
     } else {
         tooltip.style.display = 'none';
         container.style.cursor = isDragging ? 'grabbing' : 'grab';

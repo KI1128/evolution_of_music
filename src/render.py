@@ -89,37 +89,14 @@ def draw_graph(G, pos, music_genres, milestones, current_year, output_file="evol
         ax.scatter(start_x, y, color='white', s=40, zorder=5, edgecolors=node_color, linewidths=1.5)
         ax.text(start_x, y + 0.3, f"{node}", color='white', fontsize=8, ha='left', va='bottom', weight='bold')
 
-    # 3. マイルストーン（全体での衝突回避処理）
-    all_labels = []
-    
+    # 3. マイルストーン（点のみ描画し、テキストは非表示）
     for genre in music_genres.keys():
         if genre not in pos: continue
         base_y = pos[genre][1]
         for m in [m for m in milestones if m["genre"] == genre]:
             x = warp_time(m["year"])
-            text = f"{m['year']} - {m['work']}\n({m['artist']})"
-            all_labels.append({"x": x, "y": base_y - 0.8, "text": text, "genre_y": base_y, "genre_color": music_genres[genre]["color"]})
+            # 〇（マーカー）のみを描画
             ax.scatter(x, base_y, color='white', s=50, marker='o', edgecolors=music_genres[genre]["color"], linewidths=2, zorder=10)
-
-    for _ in range(30): 
-        for i in range(len(all_labels)):
-            for j in range(i + 1, len(all_labels)):
-                l1, l2 = all_labels[i], all_labels[j]
-                dx = abs(l1["x"] - l2["x"])
-                if dx < 25.0: 
-                    dy = abs(l1["y"] - l2["y"])
-                    if dy < 1.0: 
-                        if l1["y"] < l2["y"]:
-                            l1["y"] -= 0.15
-                        else:
-                            l2["y"] -= 0.15
-
-    for lbl in all_labels:
-        ax.plot([lbl["x"], lbl["x"]+0.4], [lbl["genre_y"], lbl["y"]], 
-                color='white', alpha=0.3, linewidth=1.0, linestyle=':', zorder=9)
-        ax.text(lbl["x"] + 0.5, lbl["y"], lbl["text"], color='white', fontsize=4, ha='left', va='top', zorder=11,
-                bbox=dict(facecolor='#111111', alpha=0.8, edgecolor='none', pad=1.0))
-
     # タイトルや軸などを非表示にし、純粋なグラフデータだけにする
     ax.axis('off')
 

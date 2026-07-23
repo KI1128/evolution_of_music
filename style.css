@@ -111,16 +111,23 @@ body {
 #tooltip {
     display: none;
     position: absolute;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.95);
     color: white;
     padding: 10px 15px;
     border-radius: 6px;
     z-index: 200;
-    pointer-events: none; /* マウスイベントを邪魔しないようにする */
+    
+    /* autoにしてテキスト選択を可能にする */
+    pointer-events: auto; 
+    
     border: 1px solid #555;
     font-size: 14px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-    white-space: nowrap;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
+    
+    /* 横展開＆見切れ対策 */
+    max-width: 85vw; /* 画面幅の85%まで広がるのを許可 */
+    max-height: 80vh; /* 縦にはみ出る場合はスクロール */
+    overflow-y: auto;
 }
 
 .genre-item {
