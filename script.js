@@ -35,6 +35,60 @@ function toggleUI() {
     }
 }
 
+// --- 🌍 多言語対応（i18n）の設定 ---
+let currentLang = 'ja';
+
+const i18n = {
+    ja: {
+        langBtn: '🌐 English',
+        uiHide: '👁️ 検索を非表示',
+        uiShow: '🔍 検索を表示',
+        searchLabel: '🔍 ジャンル・曲を検索',
+        searchPlaceholder: 'ジャンル、曲名、アーティスト...',
+        resetView: '🗺️ 全体表示に戻す',
+        contactBtn: '💬 お問い合わせ・リクエスト',
+        hoverHint: '🖱️ クリックで固定してコピー',
+        lockHint: '📌 固定中（テキストをコピーできます。背景をクリックで解除）',
+        parentText: '親: ',
+        noneText: 'なし',
+        otherSongs: '...他 {count} 曲' // {count}は後で置換します
+    },
+    en: {
+        langBtn: '🌐 日本語',
+        uiHide: '👁️ Hide Search',
+        uiShow: '🔍 Show Search',
+        searchLabel: '🔍 Search Genres / Songs',
+        searchPlaceholder: 'Genre, Title, Artist...',
+        resetView: '🗺️ Reset View',
+        contactBtn: '💬 Contact & Requests',
+        hoverHint: '🖱️ Click to lock & copy',
+        lockHint: '📌 Locked (Select text to copy. Click background to unlock)',
+        parentText: 'Parent: ',
+        noneText: 'None',
+        otherSongs: '...and {count} more'
+    }
+};
+
+function toggleLanguage() {
+    currentLang = currentLang === 'ja' ? 'en' : 'ja';
+    const t = i18n[currentLang];
+
+    // UIのテキストを書き換え
+    document.getElementById('lang-toggle-btn').innerText = t.langBtn;
+    document.getElementById('contact-btn').innerText = t.contactBtn;
+    
+    const uiBtn = document.getElementById('toggle-ui-btn');
+    if (document.getElementById('ui').style.display === 'none') {
+        uiBtn.innerText = t.uiShow;
+    } else {
+        uiBtn.innerText = t.uiHide;
+    }
+
+    document.querySelector('#ui label').innerText = t.searchLabel;
+    document.getElementById('genre-search').placeholder = t.searchPlaceholder;
+    document.querySelector('#ui button[onclick="resetView()"]').innerText = t.resetView;
+}
+
 // --- 1. ジャンルリストの描画 ---
 function renderList(filter = '') {
     genreListEl.innerHTML = '';
@@ -174,7 +228,7 @@ window.addEventListener('mouseup', (e) => {
             // ツールチップをロック（固定）する
             isTooltipLocked = true;
             tooltip.style.border = '2px solid #42A5F5';
-            tooltip.innerHTML = '<div style="font-size:12px; color:#42A5F5; margin-bottom:10px; border-bottom:1px solid #555; padding-bottom:5px;">📌 固定中（テキストをコピーできます。背景をクリックで解除）</div>' + tooltip.innerHTML;
+            tooltip.innerHTML = `<div style="font-size:12px; color:#42A5F5; margin-bottom:10px; border-bottom:1px solid #555; padding-bottom:5px;">${i18n[currentLang].lockHint}</div>` + tooltip.innerHTML;
             return;
         }
     }
@@ -224,14 +278,14 @@ window.addEventListener('mousemove', (e) => {
 
     if ((hoveredGenre || hoveredMilestones.length > 0) && !isDragging) {
         let tooltipHTML = '';
+        const t = i18n[currentLang]; // 現在の言語辞書を取得
         
-        // ホバー時に「クリックで固定できる」旨のヒントを表示
-        tooltipHTML += '<div style="font-size: 11px; color: #81D4FA; margin-bottom: 8px; text-align: right; border-bottom: 1px dashed #555; padding-bottom: 4px;">🖱️ クリックで固定してコピー</div>';
+        tooltipHTML += `<div style="font-size: 11px; color: #81D4FA; margin-bottom: 8px; text-align: right; border-bottom: 1px dashed #555; padding-bottom: 4px;">${t.hoverHint}</div>`;
 
         if (hoveredGenre) {
             const parents = genreCoordinates[hoveredGenre].parents;
-            const parentText = parents && parents.length > 0 ? parents.join(', ') : 'なし';
-            tooltipHTML += `<strong>🎵 ${hoveredGenre}</strong><br><span style="font-size:12px; color:#aaa;">親: ${parentText}</span>`;
+            const parentText = parents && parents.length > 0 ? parents.join(', ') : t.noneText;
+            tooltipHTML += `<strong>🎵 ${hoveredGenre}</strong><br><span style="font-size:12px; color:#aaa;">${t.parentText}${parentText}</span>`;
         }
 
         if (hoveredMilestones.length > 0) {
