@@ -391,3 +391,78 @@ window.addEventListener('click', (e) => {
         modal.style.display = 'none';
     }
 });
+
+// --- 5. スマホ・タブレット用（タッチ操作・ピンチズーム対応） ---
+let initialPinchDistance = null;
+let touchStartX = 0;
+let touchStartY = 0;
+
+container.addEventListener('touchstart', (e) => {
+    // UI部分をタッチした場合は画像を動かさない
+    if (e.target.closest('#ui') || e.target.closest('#tooltip') || e.target.closest('#top-right-menu')) return;
+    
+    if (e.touches.length === 1) {
+        // 1本指：スワイプ（移動）開始
+        isDragging = true;
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+        startX = touchStartX - posX;
+        startY = touchStartY - posY;
+    } else if (e.touches.length === 2) {
+        // 2本指：ピンチ（ズーム）開始
+        isDragging = false; 
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        initialPinchDistance = Math.hypot(dx, dy);
+    }
+}, { passive: false });
+
+container.addEventListener('touchmove', (e) => {
+    if (e.target.closest('#ui') || e.target.closest('#tooltip') || e.target.closest('#top-right-menu')) return;
+    
+    // スワイプによる画面スクロールや、ブラウザの「戻る/進む」ジェスチャーを無効化
+    e.preventDefault(); 
+
+    if (e.touches.length === 1 && isDragging) {
+        // 1本指：移動の適用
+        posX = e.touches[0].clientX - startX;
+        posY = e.touches[0].clientY - startY;
+        requestAnimationFrame(applyTransform);
+        
+    } else if (e.touches.length === 2 && initialPinchDistance) {
+        // 2本指：ズームの適用
+        const dx = e.touches[0].clientX - e.touches[1].clientX;
+        const dy = e.touches[0].clientY - e.touches[1].clientY;
+        const currentDistance = Math.hypot(dx, dy);
+        
+        // ズームの倍率計算
+        const zoomFactor = currentDistance / initialPinchDistance;
+        
+        // ズームの中心点を計算（2本指の中間点）
+        const centerX = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+        const centerY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+
+        const xs = (centerX - posX) / scale;
+        const ys = (centerY - posY) / scale;
+
+        scale *= zoomFactor;
+        
+        // ズームの限界値を設定（小さすぎ・大きすぎを防ぐ）
+        scale = Math.max(0.1, Math.min(scale, 5.0));
+
+        posX = centerX - xs * scale;
+        posY = centerY - ys * scale;
+        
+        initialPinchDistance = currentDistance; // 次のフレーム用に更新
+        requestAnimationFrame(applyTransform);
+    }
+}, { passive: false });
+
+container.addEventListener('touchend', (e) => {
+    if (e.touches.length < 2) {
+        initialPinchDistance = null; // 指が離れたらピンチ状態をリセット
+    }
+    if (e.touches.length === 0) {
+        isDragging = false;
+    }
+});

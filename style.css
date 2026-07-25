@@ -242,3 +242,55 @@ button:hover {
     color: white;
     border-color: #1976D2;
 }
+
+/* --- スマホ向けのレスポンシブ対応 --- */
+@media (max-width: 768px) {
+    /* 1. タイトルを少し小さくしてスペースを節約 */
+    #header-title {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    
+    /* 2. 左上の「検索を表示/非表示」ボタンをタイトルの下に配置 */
+    #toggle-ui-btn {
+        top: 45px;
+        left: 10px;
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    /* 3. 右上のボタン群もタイトルの下に配置し、縦並びにする */
+    #top-right-menu {
+        top: 45px !important; 
+        right: 10px !important;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 6px !important;
+    }
+
+    #contact-btn, #lang-toggle-btn {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    /* 4. 検索UIを「各種ボタン群の下」にズラす（重なり解消のキモ） */
+    #ui {
+        top: 120px; /* ここを大きく取ることでボタンとの衝突を回避 */
+        left: 5%;
+        width: 90%; 
+        box-sizing: border-box; /* paddingを含めて画面幅90%に収める */
+        max-height: calc(100vh - 140px); /* 画面下部に突き抜けないように制限 */
+        padding: 12px;
+    }
+
+    /* スマホではタップしやすいようにリストの余白を少し広げる */
+    .genre-item {
+        padding: 10px 8px;
+        font-size: 14px;
+    }
+
+    /* タイムラインの文字を小さく */
+    .timeline-tick {
+        font-size: 11px;
+    }
+}
