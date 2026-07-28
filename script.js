@@ -6,14 +6,14 @@ const tooltip = document.getElementById('tooltip');
 const HOVER_RADIUS = 40; // 反応する半径（ピクセル）
 
 const CURRENT_YEAR = new Date().getFullYear();
-const DISPLAY_YEARS = [1000, 1400, 1600, 1800, 1900, 1930, 1960, 1980, 2000, 2020];
+const DISPLAY_YEARS = [500, 1000, 1400, 1600, 1800, 1900, 1930, 1960, 1980, 2000, 2020];
 
 function warp_time(year) {
     if (year < 1900) return (year - 1400) * 0.4;
     return (1900 - 1400) * 0.4 + (year - 1900) * 2.0;
 }
 
-const x_min_val = warp_time(1000) - 10;
+const x_min_val = warp_time(500) - 10;
 const x_max_val = warp_time(CURRENT_YEAR) + 20;
 
 const timelineBar = document.getElementById('timeline-bar');

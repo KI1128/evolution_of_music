@@ -23,7 +23,7 @@ def main():
     print("🗺️ 検索ジャンプ用の座標データを生成しています...")
     
     # グラフのX軸とY軸の範囲（render.pyと同じ計算）
-    x_min_val = warp_time(1000) - 10
+    x_min_val = warp_time(500) - 10
     x_max_val = warp_time(CURRENT_YEAR) + 20
     max_y = max(p[1] for p in pos.values()) if pos else 0
     y_min_val = -3

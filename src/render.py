@@ -22,7 +22,7 @@ def draw_graph(G, pos, music_genres, milestones, current_year, output_file="evol
     
     fig.subplots_adjust(left=0.05, right=0.95, top=top_adjust, bottom=bottom_adjust)
     
-    x_min_val = warp_time(1000) - 10
+    x_min_val = warp_time(500) - 10
     x_max_val = warp_time(current_year) + 20
     ax.set_xlim(x_min_val, x_max_val)
     ax.set_ylim(-3, max_y + 3)
