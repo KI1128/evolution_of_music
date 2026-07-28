@@ -3,7 +3,7 @@ const img = document.getElementById('image');
 const searchInput = document.getElementById('genre-search');
 const genreListEl = document.getElementById('genre-list');
 const tooltip = document.getElementById('tooltip');
-const HOVER_RADIUS = 40; // 反応する半径（ピクセル）
+const HOVER_RADIUS = 20; // 反応する半径（ピクセル）
 
 const CURRENT_YEAR = new Date().getFullYear();
 const DISPLAY_YEARS = [500, 1000, 1400, 1600, 1800, 1900, 1930, 1960, 1980, 2000, 2020];

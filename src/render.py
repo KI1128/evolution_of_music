@@ -72,7 +72,7 @@ def draw_graph(G, pos, music_genres, milestones, current_year, output_file="evol
         genre_mstones = [m for m in milestones if m["genre"] == node]
         for m in genre_mstones:
             mx = warp_time(m["year"])
-            bump = base_thickness * 2.0 * np.exp(-((xs - mx)**2) / 30)
+            bump = base_thickness * 0.5 * np.exp(-((xs - mx)**2) / 30)
             thicknesses += bump
 
         if successor or end_year_val:

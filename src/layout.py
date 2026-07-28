@@ -44,7 +44,7 @@ def calculate_layout(music_genres, milestones):
 
     pos = {}
     current_y = 0
-    BASE_SPACING = 3.0 #ジャンル間のスペース
+    BASE_SPACING = 2.0 #ジャンル間のスペース
     
     for lane_index, lane in enumerate(lanes):
         if lane_index > 0:
